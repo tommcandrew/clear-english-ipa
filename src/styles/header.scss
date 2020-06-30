@@ -4,7 +4,7 @@
 }
 
 .header__top {
-  background: rgb(81, 131, 200);
+  background: $secondaryColor;
   display: flex;
   min-height: 25px;
 }
@@ -24,7 +24,7 @@
 }
 
 .header__info p {
-  color: rgb(81, 131, 200);
+  color: $mainColor;
   font-size: 1.7rem;
   font-family: "Times New Roman", Times, serif;
 }
@@ -35,7 +35,7 @@
 }
 
 .header__bottom {
-  background: rgb(92, 195, 177);
+  background: $mainColor;
   display: flex;
   justify-content: flex-end;
 }
@@ -80,6 +80,6 @@
     width: 80px;
   }
   .header__select {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }

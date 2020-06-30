@@ -1,14 +1,15 @@
 import React from "react";
 import Header from "./header.js";
 import Footer from "../components/footer";
+import "../styles/styles.scss";
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout__wrapper">
+    <>
       <Header />
       <div className="layout__content">{children}</div>
       <Footer />
-    </div>
+    </>
   );
 };
 

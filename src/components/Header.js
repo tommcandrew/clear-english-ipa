@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/header.scss";
 import celtaLogo from "../assets/logo_celta.png";
 
 const Header = () => {
@@ -18,13 +17,13 @@ const Header = () => {
       <div className="header__bottom">
         <ul className="header__nav">
           <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
+          <li>Teaching Method</li>
+          <li>Requirements</li>
+          <li>Tuition Fees</li>
+          <li>Cancellation Policy</li>
+          <li>Common Mistakes</li>
+          <li>About the teacher</li>
+          <li>Contact us</li>
         </ul>
         <div className="header__burger">
           <div></div>
