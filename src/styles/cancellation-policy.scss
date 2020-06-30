@@ -1,0 +1,47 @@
+.cancellationPolicy__content {
+  align-self: flex-end;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+.cancellationPolicy__title {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: $blueColorLighter;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cancellationPolicy__list {
+  padding-top: 1rem;
+  border-top: 1px solid #888;
+  padding-bottom: 1.5rem;
+}
+
+.cancellationPolicy__policy p {
+  margin-bottom: 1.5rem;
+}
+
+.cancellationPolicy__policy h3 {
+  color: $blueColorLighter;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cancellationPolicy__policy:last-child h3 {
+  color: $greenColor;
+}
+
+@media (min-width: 700px) {
+  .cancellationPolicy__content {
+    margin: 3rem 0;
+    width: 80%;
+  }
+  .cancellationPolicy__title {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .cancellationPolicy__list {
+    width: 80%;
+  }
+}
