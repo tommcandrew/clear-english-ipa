@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="index__content">
-        <h1 className="index__header">
+        <h1 className="index__title">
           We are excellent at teaching adults and young learners (aged 10+):
         </h1>
         <ul>

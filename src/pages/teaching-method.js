@@ -5,7 +5,7 @@ const TeachingMethod = () => {
   return (
     <Layout>
       <div className="teachingMethod__content">
-        <h1 className="teachingMethod__header">
+        <h1 className="teachingMethod__title">
           We adopt a <strong>two-stage</strong> approach:
         </h1>
         <div className="teachingMethod__stage">
