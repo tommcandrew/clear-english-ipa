@@ -1,0 +1,141 @@
+.commonMistakes__content {
+  align-self: flex-end;
+  margin: 1rem auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.commonMistakes__title {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: $blueColorLighter;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.commonMistakes__list {
+  padding-top: 1rem;
+  border-top: 1px solid #888;
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.commonMistakes__list li {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.commonMistakes__subtitle {
+  color: $blueColorLighter;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  flex: 1;
+}
+
+.commonMistakes__subtitle-wrapper {
+  display: flex;
+}
+
+.commonMistakes__smiley {
+  font-size: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.commonMistakes__ribbon {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(81, 131, 200, 0),
+    $blueColorLighter 5% 95%,
+    rgba(81, 131, 200, 0)
+  );
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.commonMistakes__email {
+  color: $blueColorLighter;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.fa-times {
+  color: red;
+  margin-right: 0.5rem;
+}
+
+.commonMistakes__pron-list li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.commonMistakes__inner p {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.commonMistakes__pron-list li::before {
+  content: "\2022";
+  color: $blueColorLighter;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.commonMistakes__inner {
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 700px) {
+  .commonMistakes__content {
+    margin: 3rem 0;
+    width: 90%;
+  }
+  .commonMistakes__inner {
+    margin: 3rem 0;
+    width: 70%;
+  }
+  .commonMistakes__title {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 0;
+  }
+  .commonMistakes__list {
+    width: 80%;
+  }
+  .commonMistakes__ribbon {
+    width: 90%;
+    background-image: linear-gradient(
+      to right,
+      rgba(81, 131, 200, 0),
+      $blueColorLighter 15% 85%,
+      rgba(81, 131, 200, 0)
+    );
+    text-align: left;
+  }
+  .commonMistakes__email {
+    text-align: left;
+  }
+  .commonMistakes__pron-list {
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .commonMistakes__smiley {
+    margin-left: -2rem;
+    margin-right: 0.5rem;
+  }
+  .commonMistakes__smiley--bottom {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
