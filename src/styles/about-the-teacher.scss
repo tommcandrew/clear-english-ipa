@@ -1,0 +1,63 @@
+.aboutTheTeacher__content {
+  align-self: flex-end;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.aboutTheTeacher__title {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: $blueColorLighter;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.aboutTheTeacher__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.aboutTheTeacher__kitty {
+  width: 200px;
+  text-align: center;
+}
+
+.aboutTheTeacher__text {
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+}
+
+.aboutTheTeacher__text p {
+  margin: 1rem 0;
+}
+
+.aboutTheTeacher__text p:last-child {
+  margin: 3rem 0 1rem 0;
+}
+
+@media (min-width: 700px) {
+  .aboutTheTeacher__content {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .aboutTheTeacher__title {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15rem;
+  }
+  .aboutTheTeacher__inner {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .aboutTheTeacher__kitty {
+    margin-top: 3rem;
+    margin-right: 3rem;
+  }
+  .aboutTheTeacher__text {
+    border-top: 1px solid #888;
+  }
+}

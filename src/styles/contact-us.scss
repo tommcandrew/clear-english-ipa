@@ -1,0 +1,40 @@
+.contactUs__content {
+  align-self: flex-end;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+.contactUs__title {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: $blueColorLighter;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contactUs__inner {
+  align-items: center;
+  margin: 2rem 0;
+  border-top: 1px solid #888;
+  padding: 1rem 0;
+}
+
+.contactUs__inner h2 {
+  font-size: 1.2rem;
+  color: $blueColorLighter;
+  margin: 1rem 0;
+}
+
+@media (min-width: 700px) {
+  .contactUs__content {
+    margin: 3rem 0;
+    width: 80%;
+  }
+  .contactUs__title {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .contactUs__inner h2 {
+    font-size: 1.5rem;
+  }
+}
