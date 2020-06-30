@@ -1,0 +1,166 @@
+.teachingMethod__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 3rem 0;
+}
+
+.teachingMethod__header {
+  color: $blueColorLighter;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.teachingMethod__stage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachingMethod__ribbon {
+  color: white;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  font-style: italic;
+  background-image: linear-gradient(
+    to right,
+    rgba(81, 131, 200, 0),
+    $blueColorLighter 15% 85%,
+    rgba(81, 131, 200, 0)
+  );
+  margin-bottom: 1.5rem;
+}
+
+.teachingMethod__subtitle--first {
+  color: $blueColorLighter;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.teachingMethod__list {
+  list-style: circle;
+  flex: 1;
+  margin-left: 1rem;
+  padding: 2rem 0;
+}
+
+.teachingMethod__list li {
+  margin: 1rem 0;
+}
+
+.teachingMethod__sublist {
+  margin-left: 1.5rem;
+}
+.teachingMethod__sublist li {
+  list-style: square;
+  margin: 1rem 0;
+}
+
+.teachingMethod__subtitle--second {
+  color: $greenColor2;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.teachingMethod__arrow {
+  width: 80px;
+  height: 0;
+  border-top: 40px solid $blueColorLighter;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: relative;
+}
+
+.teachingMethod__arrow::before {
+  position: absolute;
+  content: "";
+  height: 90px;
+  width: 20px;
+  background-image: linear-gradient(to top, $blueColorLighter 0% 40%, white);
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.teachingMethod__center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.teachingMethod__list-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.teachingMethod__decoration--left,
+.teachingMethod__decoration--right {
+  width: 40px;
+  background-color: $blueColorLightest;
+  position: relative;
+  display: none;
+}
+
+.teachingMethod__decoration--left::before,
+.teachingMethod__decoration--right::before {
+  position: absolute;
+  content: "";
+  height: 85%;
+  width: 50%;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.teachingMethod__decoration--right::before {
+  left: 0;
+}
+
+.teachingMethod__decoration--left::before {
+  right: 0;
+}
+
+@media (min-width: 700px) {
+  .teachingMethod__content {
+    width: 80%;
+  }
+  .teachingMethod__header {
+    font-size: 2rem;
+  }
+  .teachingMethod__ribbon {
+    width: 50%;
+    font-size: 1.8rem;
+  }
+  .teachingMethod__subtitle--first,
+  .teachingMethod__subtitle--second {
+    color: $blueColorLighter;
+    font-size: 1.5rem;
+  }
+
+  .teachingMethod__decoration--left,
+  .teachingMethod__decoration--right {
+    display: block;
+  }
+  .teachingMethod__list {
+    margin-left: 2rem;
+  }
+
+  .teachingMethod__sublist {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .teachingMethod__ribbon {
+    width: 25%;
+  }
+}

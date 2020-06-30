@@ -1,3 +1,5 @@
-$mainColor: rgb(92, 195, 177);
-$secondaryColor: rgb(81, 131, 200);
-$greenColor: rgb(0, 104, 56);
+$greenColor: rgb(92, 195, 177);
+$blueColor: rgb(81, 131, 200);
+$blueColorLighter: lighten($blueColor, 10%);
+$blueColorLightest: lighten($blueColor, 30%);
+$greenColor2: rgb(0, 104, 56);

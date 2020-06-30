@@ -34,8 +34,9 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 75vh;
+  align-items: center;
 }
 
 strong {
-  color: $secondaryColor;
+  color: $blueColor;
 }
