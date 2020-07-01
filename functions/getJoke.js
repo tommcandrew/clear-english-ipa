@@ -1,5 +1,3 @@
-const { default: Axios } = require("axios");
-
 const axios = require("axios");
 
 exports.handler = (event, context, callback) => {
