@@ -5,8 +5,15 @@
   display: none;
   flex-direction: column;
   justify-content: space-around;
+  align-items: stretch;
+}
+
+.mobileMenu__wrapper li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  border-bottom: 1px solid white;
 }
 
 .mobileMenu__wrapper li a {
