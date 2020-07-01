@@ -12,8 +12,8 @@ const Admin = () => {
     e.preventDefault();
     const password = e.target.password.value;
     console.log("entered password: " + password);
-    console.log("ADMIN_PASSWORD: " + process.env.ADMIN_PASSWORD);
-    if (password === process.env.ADMIN_PASSWORD) {
+    console.log("ADMIN_PASSWORD: " + process.env.GATSBY_ADMIN_PASSWORD);
+    if (password === process.env.GATSBY_ADMIN_PASSWORD) {
       setAuthenticated(true);
     } else {
       setAuthMessage("Password is incorrect.");
@@ -27,9 +27,9 @@ const Admin = () => {
   const connectToContentful = async () => {
     try {
       let client = await createClient({
-        accessToken: process.env.CONTENTFUL_UPDATE_TOKEN,
+        accessToken: process.env.GATSBY_CONTENTFUL_UPDATE_TOKEN,
       });
-      let space = await client.getSpace(process.env.CONTENTFUL_SPACE_ID);
+      let space = await client.getSpace(process.env.GATSBY_CONTENTFUL_SPACE_ID);
       return await space.getEnvironment("master");
     } catch (err) {
       setMessage("There was a connection error. Please try again later.");
