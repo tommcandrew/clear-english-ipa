@@ -1,0 +1,119 @@
+.admin__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.admin__content {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin__update {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.admin__field {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.admin__field label {
+  font-weight: bold;
+}
+
+.admin__field input {
+  font-size: 1.2rem;
+}
+
+.admin__header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin__header--top {
+  background-color: $blueColor;
+  flex: 1;
+}
+
+.admin__header--bottom {
+  background-color: $greenColor;
+  flex: 2;
+}
+
+.admin__footer {
+  min-height: 15vh;
+  background-color: $blueColor;
+  flex-shrink: 0;
+}
+
+.admin__buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding: 1rem 0;
+}
+
+.admin__wrapper button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin__submit {
+  background-image: linear-gradient(rgb(92, 195, 177), rgb(30, 128, 111));
+  color: white;
+  font-size: 1.3rem;
+  &:hover {
+    background-image: linear-gradient(rgb(61, 167, 149), rgb(20, 107, 93));
+  }
+}
+
+.admin__cancel {
+  background-image: linear-gradient(rgb(250, 86, 86), rgb(207, 50, 50));
+  color: white;
+  font-size: 1.3rem;
+  &:hover {
+    background-image: linear-gradient(rgb(202, 49, 49), rgb(165, 29, 29));
+  }
+}
+
+.admin__logout {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(214, 197, 197));
+  color: black;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  &:hover {
+    background-image: linear-gradient(rgb(221, 205, 205), rgb(185, 175, 175));
+  }
+}
+
+.admin__header--bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .admin__field {
+    flex-direction: row;
+  }
+  .admin__update {
+    width: 40%;
+  }
+  .admin__buttons {
+    width: 60%;
+  }
+}
