@@ -11,8 +11,6 @@ const Admin = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     const password = e.target.password.value;
-    console.log("entered password: " + password);
-    console.log("ADMIN_PASSWORD: " + process.env.GATSBY_ADMIN_PASSWORD);
     if (password === process.env.GATSBY_ADMIN_PASSWORD) {
       setAuthenticated(true);
     } else {
@@ -46,7 +44,7 @@ const Admin = () => {
     const stage22To1Price = Number(e.target.stage22To1Price.value);
 
     let env = await connectToContentful();
-    let content = await env.getEntry(process.env.CONTENT_ID);
+    let content = await env.getEntry(process.env.GATSBY_CONTENT_ID);
 
     if (
       stage1First8Price === content.fields.stage1First8LessonsPrice["en-US"] &&
@@ -72,8 +70,7 @@ const Admin = () => {
 
     try {
       await content.update();
-      content = await env.getEntry(process.env.CONTENT_ID);
-      console.log("publishing");
+      content = await env.getEntry(process.env.GATSBY_CONTENT_ID);
       await content.publish();
       setMessage("Your changes have been saved. You can now log out.");
     } catch (err) {
