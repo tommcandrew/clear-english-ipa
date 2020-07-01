@@ -11,7 +11,9 @@ const CommonMistakes = () => {
           <h1 className="commonMistakes__title">Common Mistakes</h1>
           <div className="commonMistakes__list">
             <div className="commonMistakes__subtitle-wrapper">
-              <span className="commonMistakes__smiley">&#129300;</span>
+              <span className="commonMistakes__smiley" role="img">
+                &#129300;
+              </span>
               <h2 className="commonMistakes__subtitle">
                 These are some common mistakes made by English learners. Can you
                 correct them?
@@ -61,7 +63,9 @@ const CommonMistakes = () => {
           </div>
           <div className="commonMistakes__list commonMistakes__pron-list">
             <div className="commonMistakes__subtitle-wrapper">
-              <span className="commonMistakes__smiley">&#128562;</span>
+              <span className="commonMistakes__smiley" role="img">
+                &#128562;
+              </span>
               <h2 className="commonMistakes__subtitle">
                 Here are some commonly mispronounced words by English learners:
               </h2>
@@ -79,7 +83,10 @@ const CommonMistakes = () => {
           </div>
           <p>
             And there are a lot more ....
-            <span className="commonMistakes__smiley commonMistakes__smiley--bottom">
+            <span
+              className="commonMistakes__smiley commonMistakes__smiley--bottom"
+              role="img"
+            >
               &#128556;
             </span>
           </p>

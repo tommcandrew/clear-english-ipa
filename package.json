@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "contentful-management": "^5.27.3",
     "dotenv": "^8.2.0",
     "gatsby": "^2.23.10",
     "gatsby-plugin-google-analytics": "^2.3.6",
