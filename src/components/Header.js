@@ -9,6 +9,12 @@ const Header = () => {
     setMobileMenuIsOpen(!mobileMenuIsOpen);
   };
 
+  // window.addEventListener("resize", () => {
+  //   if (window.innerWidth > 1000) {
+  //     setMobileMenuIsOpen(false);
+  //   }
+  // });
+
   return (
     <div className="header__wrapper">
       <div className="header__top"></div>
