@@ -21,11 +21,11 @@ const TuitionFees = () => {
     }
   `);
 
-  const tutionFees = data.allContentfulProduct.edges[0];
+  const tuitionFees = data.allContentfulTuitionFees.edges[0].node;
 
   return (
     <Layout>
-      <Head title="tution fees" />
+      <Head title="tuition fees" />
       <div className="tuitionFees__content">
         <h1 className="tuitionFees__title">Tuition Fees</h1>
         <div className="tuitionFees__stage">
@@ -36,16 +36,16 @@ const TuitionFees = () => {
           </p>
           <div className="tuitionFees__trial">
             <strong>Trial lesson: </strong>
-            <span>HK${tutionFees.stage1TrialLessonPrice} (2 hours)</span>
+            <span>HK${tuitionFees.stage1TrialLessonPrice} (2 hours)</span>
           </div>
           <p className="tuitionFees__payments">in 2 payments</p>
           <div className="tuitionFees__info">
             <strong>First 8 lessons </strong>&nbsp; (2 hours/lesson):&nbsp;
-            <p>HK${tutionFees.stage1First8LessonsPrice} (16 hours)</p>
+            <p>HK${tuitionFees.stage1First8LessonsPrice} (16 hours)</p>
           </div>
           <div className="tuitionFees__info">
             <strong>Second 8 lessons</strong>&nbsp; (2 hours/lesson):&nbsp;
-            <p>HK{tutionFees.stage1Second8LessonsPrice} (16 hours)</p>
+            <p>HK{tuitionFees.stage1Second8LessonsPrice} (16 hours)</p>
           </div>
         </div>
         <div className="tuitionFees__stage">
@@ -53,14 +53,14 @@ const TuitionFees = () => {
           <div className="tuitionFees__info">
             <strong>1-to-1 lessons: </strong>&nbsp;
             <p>
-              HK${tutionFees.stage21To1LessonsPrice}/per person (4 lessons x 1.5
-              hours, 6 hours in total)
+              HK${tuitionFees.stage21To1LessonsPrice}/per person (4 lessons x
+              1.5 hours, 6 hours in total)
             </p>
           </div>
           <div className="tuitionFees__info">
             <strong>2-to-1 lessons: </strong>&nbsp;
             <p>
-              HK{tutionFees.stage22To1LessonsPrice}/per person (4 lessons x 1.5
+              HK{tuitionFees.stage22To1LessonsPrice}/per person (4 lessons x 1.5
               hours, 6 hours in total)
             </p>
           </div>
