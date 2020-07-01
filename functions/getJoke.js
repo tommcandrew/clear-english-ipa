@@ -1,15 +1,14 @@
 const axios = require("axios");
-
 exports.handler = (event, context, callback) => {
   axios
-    .get("http://api.icndb.com/jokes/random1http://api.icndb.com/jokes/random")
+    .get("https://jsonplaceholder.typicode.com/todos/1")
     .then((res) => {
       callback(null, {
         statusCode: 200,
-        body: res.data,
+        body: res.data.title,
       });
     })
     .catch((err) => {
-      console.log(err);
+      callback(err);
     });
 };
