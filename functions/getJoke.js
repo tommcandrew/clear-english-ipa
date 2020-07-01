@@ -1,6 +1,6 @@
 exports.handler = (event, context, callback) => {
   callback(null, {
-    statusCode: 400,
-    body: "Hello, World",
+    statusCode: 200,
+    body: "Hello, this is Thomas",
   });
 };
