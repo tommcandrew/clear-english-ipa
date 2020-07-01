@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { createClient } from "contentful-management";
 import Notification from "../components/notification";
@@ -11,6 +11,8 @@ const Admin = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     const password = e.target.password.value;
+    console.log("entered password: " + password);
+    console.log("ADMIN_PASSWORD: " + process.env.ADMIN_PASSWORD);
     if (password === process.env.ADMIN_PASSWORD) {
       setAuthenticated(true);
     } else {
