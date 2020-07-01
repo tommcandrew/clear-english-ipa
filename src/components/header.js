@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import celtaLogo from "../assets/logo_celta.png";
+import MobileMenu from "./mobileMenu";
 
 const Header = () => {
+  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuIsOpen(!mobileMenuIsOpen);
+  };
+
   return (
     <div className="header__wrapper">
       <div className="header__top"></div>
@@ -41,12 +48,13 @@ const Header = () => {
             <a href="/contact-us">Contact us</a>
           </li>
         </ul>
-        <div className="header__burger">
+        <div className="header__burger" onClick={toggleMobileMenu}>
           <div></div>
           <div></div>
           <div></div>
         </div>
       </div>
+      <MobileMenu mobileMenuIsOpen={mobileMenuIsOpen} />
     </div>
   );
 };
