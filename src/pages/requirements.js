@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const Requirements = () => {
   return (
     <Layout>
+      <Head title="requirements" />
       <div className="requirements__content">
         <h1 className="requirements__title">Requirements</h1>
         <ul className="requirements__list">

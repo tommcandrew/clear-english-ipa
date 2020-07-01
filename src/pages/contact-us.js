@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const ContactUs = () => {
   return (
     <Layout>
+      <Head title="contact us" />
       <div className="contactUs__content">
         <h1 className="contactUs__title">Contact us</h1>
         <div className="contactUs__inner">

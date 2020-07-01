@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const Home = () => {
   return (
     <Layout>
+      <Head title="home" />
       <div className="index__content">
         <h1 className="index__title">
           We are excellent at teaching adults and young learners (aged 10+):

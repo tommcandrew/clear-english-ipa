@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const CommonMistakes = () => {
   return (
     <Layout>
+      <Head title="common mistakes" />
       <div className="commonMistakes__content">
         <div className="commonMistakes__inner">
           <h1 className="commonMistakes__title">Common Mistakes</h1>

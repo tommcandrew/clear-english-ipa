@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const TeachingMethod = () => {
   return (
     <Layout>
+      <Head title="teaching method" />
       <div className="teachingMethod__content">
         <h1 className="teachingMethod__title">
           We adopt a <strong>two-stage</strong> approach:

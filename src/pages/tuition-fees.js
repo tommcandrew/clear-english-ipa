@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const TuitionFees = () => {
   return (
     <Layout>
+      <Head title="tution fees" />
       <div className="tuitionFees__content">
         <h1 className="tuitionFees__title">Tuition Fees</h1>
         <div className="tuitionFees__stage">

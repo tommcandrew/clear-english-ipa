@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/head.js";
 
 const CancellationPolicy = () => {
   return (
     <Layout>
+      <Head title="cancellation policy" />
       <div className="cancellationPolicy__content">
         <h1 className="cancellationPolicy__title">Cancellation Policy</h1>
         <div className="cancellationPolicy__list">

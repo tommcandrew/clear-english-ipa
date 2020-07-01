@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 import kitty from "../assets/KittyLamCropped.jpg";
+import Head from "../components/head.js";
 
 const AboutTheTeacher = () => {
   return (
     <Layout>
+      <Head title="about the teacher" />
       <div className="aboutTheTeacher__content">
         <h1 className="aboutTheTeacher__title">About the teacher</h1>
         <div className="aboutTheTeacher__inner">
