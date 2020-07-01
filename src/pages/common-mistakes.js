@@ -1,7 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const CommonMistakes = () => {
   return (
@@ -18,53 +16,44 @@ const CommonMistakes = () => {
               </h2>
             </div>
             <li>
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               Please decide the place which is convenient for you.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />I really like the 1980’s music
-              and fashion.
+              <span className="commonMistakes__times">&times;</span>I really
+              like the 1980's music and fashion.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               It was the first time I saw a whale.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               Most of the people agreed with me about the problems of global
               warming.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               The police is coming to investigate the incident.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               Amongst all the balloons, I like the one in red colour.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               Could you list out what we have to buy today?
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               I’m quite busy now. Can I call you back 15 minutes later?
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               I’ve spent a lot of effort improving my English.
             </li>
             <li>
-              {" "}
-              <FontAwesomeIcon icon={faTimes} />
+              <span className="commonMistakes__times">&times;</span>
               When I was a kid, I had joined a choir for three years.
             </li>
           </div>
