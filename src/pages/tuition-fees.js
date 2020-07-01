@@ -45,7 +45,7 @@ const TuitionFees = () => {
           </div>
           <div className="tuitionFees__info">
             <strong>Second 8 lessons</strong>&nbsp; (2 hours/lesson):&nbsp;
-            <p>HK{tuitionFees.stage1Second8LessonsPrice} (16 hours)</p>
+            <p>HK${tuitionFees.stage1Second8LessonsPrice} (16 hours)</p>
           </div>
         </div>
         <div className="tuitionFees__stage">
@@ -60,8 +60,8 @@ const TuitionFees = () => {
           <div className="tuitionFees__info">
             <strong>2-to-1 lessons: </strong>&nbsp;
             <p>
-              HK{tuitionFees.stage22To1LessonsPrice}/per person (4 lessons x 1.5
-              hours, 6 hours in total)
+              HK${tuitionFees.stage22To1LessonsPrice}/per person (4 lessons x
+              1.5 hours, 6 hours in total)
             </p>
           </div>
         </div>
