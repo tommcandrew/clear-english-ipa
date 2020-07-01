@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import celtaLogo from "../assets/logo_celta.png";
 import MobileMenu from "./mobileMenu";
+import generateNavLinks from "../utils/generateNavLinks";
+import LanguageContext from "../context/LanguageContext";
 
 const Header = () => {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
+  const { language, changeLanguage } = useContext(LanguageContext);
 
   const toggleMobileMenu = () => {
     setMobileMenuIsOpen(!mobileMenuIsOpen);
@@ -29,37 +32,18 @@ const Header = () => {
           <p>Kitty Lam</p>
           <img src={celtaLogo} alt="" />
         </div>
-        <select className="header__select">
+        {/* <select className="header__select">
           <option value="en">English</option>
-        </select>
+        </select> */}
+        <button
+          onClick={() => changeLanguage(language === "en" ? "chSim" : "en")}
+          className="header__lang"
+        >
+          {language === "en" ? "CH-SIM" : "EN"}
+        </button>
       </div>
       <div className="header__bottom">
-        <ul className="header__nav">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/teaching-method">Teaching Method</a>
-          </li>
-          <li>
-            <a href="/requirements">Requirements</a>
-          </li>
-          <li>
-            <a href="/tuition-fees">Tuition Fees</a>
-          </li>
-          <li>
-            <a href="/cancellation-policy">Cancellation Policy</a>
-          </li>
-          <li>
-            <a href="/common-mistakes">Common Mistakes</a>
-          </li>
-          <li>
-            <a href="/about-the-teacher">About the teacher</a>
-          </li>
-          <li>
-            <a href="/contact-us">Contact us</a>
-          </li>
-        </ul>
+        <ul className="header__nav">{generateNavLinks(language)}</ul>
         <div className="header__burger" onClick={toggleMobileMenu}>
           <div></div>
           <div></div>

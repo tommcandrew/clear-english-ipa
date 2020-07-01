@@ -1,149 +1,47 @@
 const multiLingualText = {
-  products: {
-    en: "Products",
-    es: "Productos",
+  navList: {
+    en: [
+      "Home",
+      "Teaching Method",
+      "Requirements",
+      "Tuition Fees",
+      "Cancellation Policy",
+      "Common Mistakes",
+      "About the teacher",
+      "Contact us",
+    ],
+    chSim: [
+      "主页",
+      "教学方法",
+      "基本要求",
+      "学费",
+      "取消课堂政策",
+      "常见错误",
+      "老师",
+      "联络我们",
+    ],
   },
-  services: {
-    en: "Services",
-    es: "Servicios",
-  },
-  contact: {
-    en: "Contact",
-    es: "Contacto",
-  },
-  your_order: {
-    en: "Your Order",
-    es: "Su Pedido",
-  },
-  your_cart_is_empty: {
-    en: "Your cart is empty.",
-    es: "Tu carrito esta vacío",
-  },
-  get_quote: {
-    en: "Get Quote",
-    es: "Consigue cotización",
-  },
-  our_services: {
-    en: "Our Services",
-    es: "Nuestros Servicios",
-  },
-  our_products: {
-    en: "Our Products",
-    es: "Nuestros Productos",
-  },
-  custom_design: {
-    en: "Custom Design",
-    es: "Diseño Personalizado",
-  },
-  custom_design_main: {
+  indexTitle: {
     en:
-      "If you don’t find exactly what you’re looking for within our product range, you can avail yourself of our bespoke packaging design service. If you have a design or sketch ready, we will use that. If you don’t have a design ready or if you don’t have a specific idea in mind, you can discuss your requirements with our design team who will help create a design that you’re happy with. Just get in touch with your query via the Contact page.",
-    es:
-      "Si no encuentra exactamente lo que está buscando dentro de nuestra gama de productos, puede aprovechar nuestro diseño de empaque a medida servicio. Si tiene un diseño o boceto listo, lo utilizaremos. Si no tienes un diseño listo o si no tienes una idea específica en mente, puede discutir sus requisitos con nuestro equipo de diseño que ayudará a crear un diseño con el que estés satisfecho. Solo ponte en contacto con su consulta a través de la página de contacto.",
+      "We are excellent at teaching <strong>adults</strong> and <strong>young learners (aged 10+)</strong>:",
+    chSim:
+      "<strong>我们精於教</strong>导成人<strong>及</strong>10岁以上的青少年<strong>如何讲和写</strong>正统英语:",
   },
-  your_details: {
-    en: "Your Details",
-    es: "Sus Detalles",
-  },
-  name: {
-    en: "Name",
-    es: "Nombre",
-  },
-  company: {
-    en: "Company",
-    es: "Empresa",
-  },
-  email: {
-    en: "Email",
-    es: "Email",
-  },
-  phone: {
-    en: "Phone",
-    es: "Teléfono",
-  },
-  note: {
-    en: "Note",
-    es: "Nota",
-  },
-  send: {
-    en: "Send",
-    es: "Enviar",
-  },
-  our_company: {
-    en: "Our Company",
-    es: "Nuestra Empresa",
-  },
-  about: {
-    en: "About",
-    es: "Acerca de",
-  },
-  success_message: {
-    en: "Thank you for your order. We will be in touch shortly.",
-    es: "Gracias por su orden. Nos veremos pronto.",
-  },
-  remove_item: {
-    en: "Remove item",
-    es: "Remover artículo",
-  },
-  already_in_cart: {
-    en: "This item is already in your cart.",
-    es: "Este artículo ya está en su carrito.",
-  },
-  added: {
-    en: "Added to cart",
-    es: "Añadido al carrito",
-  },
-  removed: {
-    en: "Item removed",
-    es: "Artículo eliminado",
-  },
-  qty: {
-    en: "QTY",
-    es: "CANT.",
-  },
-  add: {
-    en: "Add",
-    es: "Añadir",
-  },
-  custom_design: {
-    en: "Custom Design",
-    es: "Diseño Personalizado",
-  },
-  contact_us: {
-    en: "Contact Us",
-    es: "Contacta con Nosotros",
-  },
-  pieces: {
-    en: "pieces",
-    es: "unidades",
-  },
-  specifications: {
-    en: "Specifications",
-    es: "Especificaciones",
-  },
-  colour: {
-    en: "Colour",
-    es: "Color",
-  },
-  material: {
-    en: "Material",
-    es: "Material",
-  },
-  dosage: {
-    en: "Dosage",
-    es: "Dosis",
-  },
-  weight: {
-    en: "Weight",
-    es: "Peso",
-  },
-  capacity: {
-    en: "Capacity",
-    es: "Capacidad",
-  },
-  enter_a_quantity: {
-    en: "Enter a quantity",
-    es: "Ingrese una cantidad",
+  indexList: {
+    en: [
+      "to <strong>remove</strong> their <strong>accent</strong>,especially if they are from <strong>Asia</strong>.",
+      "to <strong>correct</strong> their <strong>pronunciation mistakes</strong>.",
+      "to know the <strong>tricks</strong> to using the <strong>International Phonetic Alphabet (IPA)</strong>.",
+      "to <strong>write</strong> with <strong>good grammar</strong>, <strong>broad vocabulary</strong> and <strong>effective organisation</strong>.",
+      "to understand their mistakes with <strong>thorough explanations</strong>.",
+    ],
+    chSim: [
+      "<strong>改掉口音</strong> (尤其是<strong>亚洲地区口音</strong>)",
+      "<strong>纠正发音</strong>",
+      "如何使用<strong>英语国际音标</strong>，并了解其中<strong>诀窍</strong>",
+      "培养<strong>写作技巧</strong> (掌握<strong>文法</strong>、<strong>词汇</strong>和<strong>组织</strong>)",
+      "<strong>清楚解释</strong>学员的<strong>误解</strong>或<strong>错误</strong>，令学员懂得如何纠正自己",
+    ],
   },
 };
 
