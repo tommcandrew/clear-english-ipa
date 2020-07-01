@@ -8,7 +8,7 @@ const Jokes = () => {
     axios
       .get("/.netlify/functions/getJoke")
       .then((res) => {
-        console.log(res);
+        setJoke(res.data);
       })
       .catch((err) => {
         console.log(err);
