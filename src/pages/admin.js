@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { createClient } from "contentful-management";
+import Notification from "../components/notification";
 
 const Admin = () => {
   const [authenticated, setAuthenticated] = useState(false);
+  const [message, setMessage] = useState();
+  const [authMessage, setAuthMessage] = useState(null);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -11,7 +14,7 @@ const Admin = () => {
     if (password === process.env.ADMIN_PASSWORD) {
       setAuthenticated(true);
     } else {
-      console.log("wrong password");
+      setAuthMessage("Password is incorrect.");
     }
   };
 
@@ -20,11 +23,15 @@ const Admin = () => {
   };
 
   const connectToContentful = async () => {
-    let client = await createClient({
-      accessToken: process.env.CONTENTFUL_UPDATE_TOKEN,
-    });
-    let space = await client.getSpace(process.env.CONTENTFUL_SPACE_ID);
-    return await space.getEnvironment("master");
+    try {
+      let client = await createClient({
+        accessToken: process.env.CONTENTFUL_UPDATE_TOKEN,
+      });
+      let space = await client.getSpace(process.env.CONTENTFUL_SPACE_ID);
+      return await space.getEnvironment("master");
+    } catch (err) {
+      setMessage("There was a connection error. Please try again later.");
+    }
   };
 
   const handleUpdate = async (e) => {
@@ -38,16 +45,38 @@ const Admin = () => {
 
     let env = await connectToContentful();
     let content = await env.getEntry(process.env.CONTENT_ID);
+
+    if (
+      stage1First8Price === content.fields.stage1First8LessonsPrice["en-US"] &&
+      stage1Second8Price ===
+        content.fields.stage1Second8LessonsPrice["en-US"] &&
+      stage1TrialLength === content.fields.stage1TrialLessonLength["en-US"] &&
+      stage1TrialPrice === content.fields.stage1TrialLessonPrice["en-US"] &&
+      stage21To1Price === content.fields.stage21To1LessonsPrice["en-US"] &&
+      stage22To1Price === content.fields.stage22To1LessonsPrice["en-US"]
+    ) {
+      // setMessage("Your changes have been saved. You can now log out.");
+      setMessage("No changes detected.");
+
+      return;
+    }
+
     content.fields.stage1First8LessonsPrice["en-US"] = stage1First8Price;
     content.fields.stage1Second8LessonsPrice["en-US"] = stage1Second8Price;
     content.fields.stage1TrialLessonLength["en-US"] = stage1TrialLength;
     content.fields.stage1TrialLessonPrice["en-US"] = stage1TrialPrice;
     content.fields.stage21To1LessonsPrice["en-US"] = stage21To1Price;
     content.fields.stage22To1LessonsPrice["en-US"] = stage22To1Price;
-    await content.update();
-    content = await env.getEntry(process.env.CONTENT_ID);
-    await content.publish();
-    console.log("content updated - you can now log out");
+
+    try {
+      await content.update();
+      content = await env.getEntry(process.env.CONTENT_ID);
+      console.log("publishing");
+      await content.publish();
+      setMessage("Your changes have been saved. You can now log out.");
+    } catch (err) {
+      setMessage("There was a problem saving your changes.");
+    }
   };
 
   const data = useStaticQuery(graphql`
@@ -82,11 +111,15 @@ const Admin = () => {
       <div className="admin__content">
         {!authenticated && (
           <form className="admin__login" onSubmit={handleLogin}>
-            <div>
-              <label htmlFor="password">Password:</label>
+            <div className="admin__login-field">
+              <label htmlFor="password">Password: </label>
               <input type="password" id="password" name="password" />
             </div>
             <button>Log in</button>
+            <div className="admin__auth-message">{authMessage}</div>
+            <a className="admin__home" href="/">
+              Home
+            </a>
           </form>
         )}
         {authenticated && (
@@ -174,6 +207,9 @@ const Admin = () => {
         )}
       </div>
       <div className="admin__footer"></div>
+      {message && (
+        <Notification message={message} handleClose={() => setMessage(null)} />
+      )}
     </div>
   );
 };

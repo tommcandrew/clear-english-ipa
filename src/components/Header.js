@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import celtaLogo from "../assets/logo_celta.png";
 import MobileMenu from "./mobileMenu";
 
@@ -9,11 +9,17 @@ const Header = () => {
     setMobileMenuIsOpen(!mobileMenuIsOpen);
   };
 
-  // window.addEventListener("resize", () => {
-  //   if (window.innerWidth > 1000) {
-  //     setMobileMenuIsOpen(false);
-  //   }
-  // });
+  useEffect(() => {
+    if (window === undefined) {
+      return;
+    } else {
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 1000) {
+          setMobileMenuIsOpen(false);
+        }
+      });
+    }
+  }, []);
 
   return (
     <div className="header__wrapper">
