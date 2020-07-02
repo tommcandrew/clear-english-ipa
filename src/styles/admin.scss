@@ -1,14 +1,10 @@
-.admin__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
 .admin__content {
+  align-self: flex-end;
+  margin: 3rem 0;
+  width: 85%;
+  margin: 0 auto;
   flex: 1;
-  align-items: center;
   display: flex;
-  flex-direction: column;
 }
 
 .admin__login {
@@ -41,11 +37,11 @@
 }
 
 .admin__update {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .admin__field {
@@ -65,28 +61,6 @@
   font-size: 1.2rem;
 }
 
-.admin__header {
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.admin__header--top {
-  background-color: $blueColor;
-  flex: 1;
-}
-
-.admin__header--bottom {
-  background-color: $greenColor;
-  flex: 2;
-}
-
-.admin__footer {
-  min-height: 15vh;
-  background-color: $blueColor;
-  flex-shrink: 0;
-}
-
 .admin__buttons {
   display: flex;
   justify-content: space-around;
@@ -94,7 +68,7 @@
   padding: 1rem 0;
 }
 
-.admin__wrapper button {
+.admin__content button {
   padding: 0.25rem 0.5rem;
   border: none;
   border-radius: 4px;
@@ -119,35 +93,12 @@
   }
 }
 
-.admin__logout {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(214, 197, 197));
-  color: black;
-  margin-right: 0.5rem;
-  font-size: 1.1rem;
-  &:hover {
-    background-image: linear-gradient(rgb(221, 205, 205), rgb(185, 175, 175));
-  }
-}
-
 .admin__login button {
   background-image: linear-gradient(rgb(92, 195, 177), rgb(30, 128, 111));
   color: white;
   font-size: 1.3rem;
   &:hover {
     background-image: linear-gradient(rgb(61, 167, 149), rgb(20, 107, 93));
-  }
-}
-
-.admin__home {
-  color: black;
-  margin-top: 5rem;
-  font-size: 1.3rem;
-  border: 1px solid black;
-  padding: 0.25rem 0.7rem;
-  transition: all 0.2s ease-out;
-  &:hover {
-    color: white;
-    background: $blueColor;
   }
 }
 

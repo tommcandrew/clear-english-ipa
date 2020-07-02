@@ -100,6 +100,7 @@
 .teachingMethod__list-wrapper {
   display: flex;
   align-items: stretch;
+  width: 100%;
 }
 
 .teachingMethod__decoration--left,
@@ -127,6 +128,10 @@
 
 .teachingMethod__decoration--left::before {
   right: 0;
+}
+
+.teachingMethod__medium {
+  font-style: italic;
 }
 
 @media (min-width: 700px) {

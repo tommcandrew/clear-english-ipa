@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { createClient } from "contentful-management";
 import Notification from "../components/notification";
+import Layout from "../components/Layout";
 
 const Admin = () => {
   const [authenticated, setAuthenticated] = useState(false);
@@ -55,9 +56,7 @@ const Admin = () => {
       stage21To1Price === content.fields.stage21To1LessonsPrice["en-US"] &&
       stage22To1Price === content.fields.stage22To1LessonsPrice["en-US"]
     ) {
-      // setMessage("Your changes have been saved. You can now log out.");
-      setMessage("No changes detected.");
-
+      setMessage("Your changes have been saved.");
       return;
     }
 
@@ -72,7 +71,7 @@ const Admin = () => {
       await content.update();
       content = await env.getEntry(process.env.GATSBY_CONTENT_ID);
       await content.publish();
-      setMessage("Your changes have been saved. You can now log out.");
+      setMessage("Your changes have been saved.");
     } catch (err) {
       setMessage("There was a problem saving your changes.");
     }
@@ -98,15 +97,7 @@ const Admin = () => {
   const tuitionFees = data.allContentfulTuitionFees.edges[0].node;
 
   return (
-    <div className="admin__wrapper">
-      <div className="admin__header">
-        <div className="admin__header--top"></div>
-        <div className="admin__header--bottom">
-          <button type="button" className="admin__logout" onClick={logout}>
-            Log out
-          </button>
-        </div>
-      </div>
+    <Layout>
       <div className="admin__content">
         {!authenticated && (
           <form className="admin__login" onSubmit={handleLogin}>
@@ -116,9 +107,6 @@ const Admin = () => {
             </div>
             <button>Log in</button>
             <div className="admin__auth-message">{authMessage}</div>
-            <a className="admin__home" href="/">
-              Home
-            </a>
           </form>
         )}
         {authenticated && (
@@ -205,11 +193,10 @@ const Admin = () => {
           </form>
         )}
       </div>
-      <div className="admin__footer"></div>
       {message && (
         <Notification message={message} handleClose={() => setMessage(null)} />
       )}
-    </div>
+    </Layout>
   );
 };
 

@@ -19,7 +19,7 @@ const Home = () => {
         ></h1>
         <ul>
           {multiLingualText.indexList[language].map((sentence, index) => (
-            <li className="index__item">
+            <li className="index__item" key={index}>
               <span className="index__number">{index + 1}/</span>
               <p dangerouslySetInnerHTML={{ __html: sentence }}></p>
             </li>

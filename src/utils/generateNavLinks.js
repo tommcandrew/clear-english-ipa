@@ -12,7 +12,7 @@ const generateNavLinks = (language) => {
         path = "/" + toKebabCase(multiLingualText.navList["en"][index]);
       }
       return (
-        <li>
+        <li key={item}>
           <a href={path}>{item}</a>
         </li>
       );

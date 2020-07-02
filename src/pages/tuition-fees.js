@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import { useStaticQuery, graphql } from "gatsby";
+import multiLingualText from "../assets/multiLingualText";
+import LanguageContext from "../context/LanguageContext";
 
 const TuitionFees = () => {
+  const { language } = useContext(LanguageContext);
+
   const data = useStaticQuery(graphql`
     query {
       allContentfulTuitionFees {
@@ -27,41 +31,68 @@ const TuitionFees = () => {
     <Layout>
       <Head title="tuition fees" />
       <div className="tuitionFees__content">
-        <h1 className="tuitionFees__title">Tuition Fees</h1>
+        <h1 className="tuitionFees__title">
+          {multiLingualText.tuitionFeesTitle[language]}
+        </h1>
         <div className="tuitionFees__stage">
-          <h2 className="tuitionFees__subtitle">Stage one</h2>
-          <p>
-            (a maximum of 4 students for online lessons and 5 for face-to-face
-            lessons)
-          </p>
+          <h2 className="tuitionFees__subtitle">
+            {multiLingualText.tuitionFeesSubtitleFirst[language]}
+          </h2>
+          <p>{multiLingualText.tuitionFeesPara[language]}</p>
           <div className="tuitionFees__trial">
-            <strong>Trial lesson: </strong>
-            <span>HK${tuitionFees.stage1TrialLessonPrice} (2 hours)</span>
+            <strong>{multiLingualText.tuitionFeesTrialLesson[language]}</strong>
+            <span>
+              HK${tuitionFees.stage1TrialLessonPrice}{" "}
+              {multiLingualText.tuitionFees2Hours[language]}
+            </span>
           </div>
-          <p className="tuitionFees__payments">in 2 payments</p>
+          <p className="tuitionFees__payments">
+            {multiLingualText.tuitionFees2Payments[language]}
+          </p>
           <div className="tuitionFees__info">
-            <strong>First 8 lessons </strong>&nbsp; (2 hours/lesson):&nbsp;
-            <p>HK${tuitionFees.stage1First8LessonsPrice} (16 hours)</p>
-          </div>
-          <div className="tuitionFees__info">
-            <strong>Second 8 lessons</strong>&nbsp; (2 hours/lesson):&nbsp;
-            <p>HK${tuitionFees.stage1Second8LessonsPrice} (16 hours)</p>
-          </div>
-        </div>
-        <div className="tuitionFees__stage">
-          <h2 className="tuitionFees__subtitle">Stage two</h2>
-          <div className="tuitionFees__info">
-            <strong>1-to-1 lessons: </strong>&nbsp;
+            <strong>
+              {multiLingualText.tuitionFeesFirst8Lessons[language]}
+            </strong>{" "}
+            {multiLingualText.tuitionFees2HoursPerLesson[language]}{" "}
             <p>
-              HK${tuitionFees.stage21To1LessonsPrice}/per person (4 lessons x
-              1.5 hours, 6 hours in total)
+              HK${tuitionFees.stage1First8LessonsPrice}{" "}
+              {multiLingualText.tuitionFees16Hours[language]}
             </p>
           </div>
           <div className="tuitionFees__info">
-            <strong>2-to-1 lessons: </strong>&nbsp;
+            <strong>
+              {multiLingualText.tuitionFeesSecond8Lessons[language]}
+            </strong>{" "}
+            {multiLingualText.tuitionFees2HoursPerLesson[language]}{" "}
             <p>
-              HK${tuitionFees.stage22To1LessonsPrice}/per person (4 lessons x
-              1.5 hours, 6 hours in total)
+              HK${tuitionFees.stage1Second8LessonsPrice}{" "}
+              {multiLingualText.tuitionFees16Hours[language]}
+            </p>
+          </div>
+        </div>
+        <div className="tuitionFees__stage">
+          <h2 className="tuitionFees__subtitle">
+            {multiLingualText.tuitionFeesSubtitleSecond[language]}
+          </h2>
+          <div className="tuitionFees__info">
+            <strong>{multiLingualText.tuitionFees1to1[language]}</strong>{" "}
+            {/* have separate chinese and english per person string */}
+            <p>
+              {language === "chSim" && "每人"}
+              {language === "chTra" && "每人"}HK$
+              {tuitionFees.stage21To1LessonsPrice}
+              {language === "en" && "/per person"}{" "}
+              {multiLingualText.tuitionFeesPriceInfo[language]}
+            </p>
+          </div>
+          <div className="tuitionFees__info">
+            <strong>{multiLingualText.tuitionFees2to1[language]}</strong>{" "}
+            <p>
+              {language === "chSim" && "每人"}
+              {language === "chTra" && "每人"}HK$
+              {tuitionFees.stage22To1LessonsPrice}{" "}
+              {language === "en" && "/per person"}{" "}
+              {multiLingualText.tuitionFeesPriceInfo[language]}
             </p>
           </div>
         </div>

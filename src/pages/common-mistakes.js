@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
+import multiLingualText from "../assets/multiLingualText";
+import LanguageContext from "../context/LanguageContext";
 
 const CommonMistakes = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Layout>
       <Head title="common mistakes" />
       <div className="commonMistakes__content">
         <div className="commonMistakes__inner">
-          <h1 className="commonMistakes__title">Common Mistakes</h1>
+          <h1 className="commonMistakes__title">
+            {multiLingualText.commonMistakesTitle[language]}
+          </h1>
           <div className="commonMistakes__list">
             <div className="commonMistakes__subtitle-wrapper">
               <span className="commonMistakes__smiley" role="img">
                 &#129300;
               </span>
               <h2 className="commonMistakes__subtitle">
-                These are some common mistakes made by English learners. Can you
-                correct them?
+                {multiLingualText.commonMistakesSubtitleFirst[language]}
               </h2>
             </div>
             <li>
@@ -67,7 +72,7 @@ const CommonMistakes = () => {
                 &#128562;
               </span>
               <h2 className="commonMistakes__subtitle">
-                Here are some commonly mispronounced words by English learners:
+                {multiLingualText.commonMistakesSubtitleSecond[language]}
               </h2>
             </div>
             <li>coupon</li>
@@ -82,7 +87,8 @@ const CommonMistakes = () => {
             <li>police</li>
           </div>
           <p>
-            And there are a lot more ....
+            {multiLingualText.commonMistakesMore[language]}
+
             <span
               className="commonMistakes__smiley commonMistakes__smiley--bottom"
               role="img"
@@ -92,10 +98,10 @@ const CommonMistakes = () => {
           </p>
         </div>
         <h1 className="commonMistakes__ribbon">
-          Come to my lessons and learn more about how to use English correctly!
+          {multiLingualText.commonMistakesCome[language]}
         </h1>
         <h1 className="commonMistakes__email">
-          Email us for an interview and a trial lesson over the internet.
+          {multiLingualText.commonMistakesEmail[language]}
         </h1>
       </div>
     </Layout>
