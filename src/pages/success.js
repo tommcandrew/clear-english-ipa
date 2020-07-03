@@ -10,7 +10,7 @@ const Success = () => {
     <Layout>
       <div className="success__wrapper">
         <p align="center" variant="h5">
-          {multiLingualText.success_message[language]}
+          {multiLingualText.successMessage[language]}
         </p>
       </div>
     </Layout>

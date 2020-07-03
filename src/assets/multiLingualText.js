@@ -437,6 +437,7 @@ const multiLingualText = {
     chSim: "电话:",
     chTra: "電話: ",
   },
+
   successMessage: {
     en: "Thank you. Your message has been sent.",
     chSim: "Thank you. Your message has been sent.",
