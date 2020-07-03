@@ -2,6 +2,9 @@
   align-self: flex-end;
   margin: 1rem auto;
   width: 100%;
+  strong {
+    color: black;
+  }
 }
 
 .aboutTheTeacher__title {
@@ -43,10 +46,6 @@
 
 .aboutTheTeacher__text p:last-child {
   margin: 3rem 0 1rem 0;
-}
-
-strong {
-  color: black;
 }
 
 @media (min-width: 700px) {

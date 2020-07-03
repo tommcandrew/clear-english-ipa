@@ -46,8 +46,8 @@ const Header = () => {
           value={language}
         >
           <option value="en">English</option>
-          <option value="chSim">Chinese (simp)</option>
-          <option value="chTra">Chinese (trad)</option>
+          <option value="chSim">中文 (简体)</option>
+          <option value="chTra">中文 (繁体)</option>
         </select>
       </div>
       <div className="header__bottom">
