@@ -15,8 +15,10 @@ const Layout = ({ children }) => {
       <Header />
       <div
         className={`layout__content ${
-          language === "chTra" && "layout__content--chinese"
-        } ${language === "chSim" && "layout__content--chinese"}`}
+          language === "en" && "layout__content--english"
+        } ${language === "chTra" && "layout__content--chinese"} ${
+          language === "chSim" && "layout__content--chinese"
+        }`}
       >
         {children}
       </div>

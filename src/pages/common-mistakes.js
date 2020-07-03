@@ -3,6 +3,10 @@ import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import multiLingualText from "../assets/multiLingualText";
 import LanguageContext from "../context/LanguageContext";
+import thinkingEmoji from "../assets/thinking.png";
+import shockedEmoji from "../assets/shocked.png";
+import oopsEmoji from "../assets/oops.png";
+import email from "../assets/Email.jpg";
 
 const CommonMistakes = () => {
   const { language } = useContext(LanguageContext);
@@ -17,9 +21,11 @@ const CommonMistakes = () => {
           </h1>
           <div className="commonMistakes__list">
             <div className="commonMistakes__subtitle-wrapper">
-              <span className="commonMistakes__smiley" role="img">
-                &#129300;
-              </span>
+              <img
+                src={thinkingEmoji}
+                alt="thinking emoji"
+                className="commonMistakes__emoji"
+              />
               <h2 className="commonMistakes__subtitle">
                 {multiLingualText.commonMistakesSubtitleFirst[language]}
               </h2>
@@ -68,9 +74,11 @@ const CommonMistakes = () => {
           </div>
           <div className="commonMistakes__list commonMistakes__pron-list">
             <div className="commonMistakes__subtitle-wrapper">
-              <span className="commonMistakes__smiley" role="img">
-                &#128562;
-              </span>
+              <img
+                src={shockedEmoji}
+                alt="shocked emoji"
+                className="commonMistakes__emoji"
+              />
               <h2 className="commonMistakes__subtitle">
                 {multiLingualText.commonMistakesSubtitleSecond[language]}
               </h2>
@@ -86,23 +94,24 @@ const CommonMistakes = () => {
             <li>society</li>
             <li>police</li>
           </div>
-          <p>
-            {multiLingualText.commonMistakesMore[language]}
-
-            <span
-              className="commonMistakes__smiley commonMistakes__smiley--bottom"
-              role="img"
-            >
-              &#128556;
-            </span>
-          </p>
+          <div className="commonMistakes__more-wrapper">
+            <p>{multiLingualText.commonMistakesMore[language]}</p>
+            <img
+              src={oopsEmoji}
+              alt="oops emoji"
+              className="commonMistakes__emoji"
+            />
+          </div>
         </div>
         <h1 className="commonMistakes__ribbon">
           {multiLingualText.commonMistakesCome[language]}
         </h1>
-        <h1 className="commonMistakes__email">
-          {multiLingualText.commonMistakesEmail[language]}
-        </h1>
+        <div className="commonMistakes__email-wrapper">
+          <img src={email} alt="email" />
+          <h1 className="commonMistakes__email">
+            {multiLingualText.commonMistakesEmail[language]}
+          </h1>
+        </div>
       </div>
     </Layout>
   );

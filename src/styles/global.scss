@@ -39,7 +39,7 @@ ul {
   flex-direction: column;
   min-height: 75vh;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .layout__content--chinese {
@@ -48,4 +48,12 @@ ul {
 
 strong {
   color: $blueColor;
+}
+
+.green {
+  color: $greenColor2;
+}
+
+.dark {
+  color: $blueColorDarker;
 }

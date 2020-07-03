@@ -16,6 +16,7 @@
     "contentful-management": "^5.27.3",
     "dotenv": "^8.2.0",
     "gatsby": "^2.23.10",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-sass": "^2.3.6",
     "gatsby-source-contentful": "^2.3.18",

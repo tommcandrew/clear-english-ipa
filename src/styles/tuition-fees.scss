@@ -10,12 +10,18 @@
   color: $blueColorLighter;
   text-align: center;
   margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .tuitionFees__stage {
   padding-top: 1rem;
   border-top: 1px solid #888;
   padding-bottom: 1.5rem;
+}
+
+.layout__content--chinese .tuitionFees__stage {
+  font-size: 1rem;
 }
 
 .tuitionFees__stage p {
@@ -42,6 +48,7 @@
   font-weight: bold;
   color: $greenColor;
   margin-bottom: 1.5rem;
+  text-decoration: underline;
 }
 
 .tuitionFees__info p {
@@ -58,6 +65,10 @@
   }
   .tuitionFees__trial {
     width: 50%;
+  }
+
+  .layout__content--chinese .tuitionFees__stage {
+    font-size: 1.3rem;
   }
 }
 

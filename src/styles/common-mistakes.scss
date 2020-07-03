@@ -13,6 +13,8 @@
   color: $blueColorLighter;
   text-align: center;
   margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .commonMistakes__list {
@@ -23,8 +25,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.layout__content--chinese .commonMistakes__list {
+  font-size: 1rem;
+}
+
 .commonMistakes__list li {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   list-style: none;
   display: flex;
   align-items: center;
@@ -34,17 +40,21 @@
   color: $blueColorLighter;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  flex: 1;
 }
 
 .commonMistakes__subtitle-wrapper {
   display: flex;
+  align-items: center;
 }
 
-.commonMistakes__smiley {
-  font-size: 2rem;
-  margin-left: 0;
-  margin-right: 0;
+.commonMistakes__emoji {
+  width: 50px;
+  margin-right: 0.5rem;
+}
+
+.commonMistakes__emoji:last-child {
+  width: 60px;
+  margin-left: 1rem;
 }
 
 .commonMistakes__ribbon {
@@ -67,7 +77,7 @@
 .commonMistakes__email {
   color: $blueColorLighter;
   font-size: 1.3rem;
-  text-align: center;
+  padding: 0 0.5rem;
 }
 
 .commonMistakes__times {
@@ -99,6 +109,23 @@
 
 .commonMistakes__inner {
   padding-left: 0.5rem;
+}
+
+.commonMistakes__email-wrapper {
+  display: flex;
+  align-items: center;
+  img {
+    width: 50px;
+  }
+}
+
+.commonMistakes__more-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  p {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 700px) {
@@ -142,5 +169,11 @@
   .commonMistakes__smiley--bottom {
     margin-left: 0;
     margin-right: 0;
+  }
+  .layout__content--chinese .commonMistakes__list {
+    font-size: 1.3rem;
+  }
+  .commonMistakes__email {
+    padding: 0;
   }
 }

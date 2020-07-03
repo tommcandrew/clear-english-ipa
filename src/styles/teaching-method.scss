@@ -12,6 +12,8 @@
   margin-bottom: 1.5rem;
   font-weight: normal;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .teachingMethod__stage {
@@ -51,6 +53,10 @@
   padding: 2rem 0;
 }
 
+.layout__content--chinese .teachingMethod__list {
+  font-size: 1rem;
+}
+
 .teachingMethod__list li {
   margin: 1rem 0;
 }
@@ -61,12 +67,27 @@
 .teachingMethod__sublist li {
   list-style: square;
   margin: 1rem 0;
+  list-style: none;
+}
+
+.teachingMethod__sublist li::before {
+  content: "\2714";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: $blueColorLighter;
+  margin-right: 0.5rem;
 }
 
 .teachingMethod__subtitle--second {
   color: $greenColor2;
   font-size: 1.1rem;
   text-align: center;
+}
+
+.layout__content--chinese .teachingMethod__subtitle--second {
+  color: $greenColor2;
 }
 
 .teachingMethod__arrow {
@@ -147,7 +168,6 @@
   }
   .teachingMethod__subtitle--first,
   .teachingMethod__subtitle--second {
-    color: $blueColorLighter;
     font-size: 1.5rem;
   }
 
@@ -161,6 +181,9 @@
 
   .teachingMethod__sublist {
     margin-left: 3rem;
+  }
+  .layout__content--chinese .teachingMethod__list {
+    font-size: 1.3rem;
   }
 }
 

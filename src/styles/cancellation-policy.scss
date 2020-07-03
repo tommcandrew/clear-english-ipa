@@ -10,12 +10,18 @@
   color: $blueColorLighter;
   text-align: center;
   margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .cancellationPolicy__list {
   padding-top: 1rem;
   border-top: 1px solid #888;
   padding-bottom: 1.5rem;
+}
+
+.layout__content--chinese .cancellationPolicy__list {
+  font-size: 1rem;
 }
 
 .cancellationPolicy__policy p {
@@ -43,5 +49,8 @@
   }
   .cancellationPolicy__list {
     width: 80%;
+  }
+  .layout__content--chinese .cancellationPolicy__list {
+    font-size: 1.3rem;
   }
 }

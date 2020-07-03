@@ -12,7 +12,9 @@ const AboutTheTeacher = () => {
     <Layout>
       <Head title="about the teacher" />
       <div className="aboutTheTeacher__content">
-        <h1 className="aboutTheTeacher__title">About the teacher</h1>
+        <h1 className="aboutTheTeacher__title">
+          {multiLingualText.aboutTheTeacherTitle[language]}
+        </h1>
         <div className="aboutTheTeacher__inner">
           <img
             src={kitty}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
 .index__content {
   align-self: flex-end;
   margin: 3rem 0;
@@ -7,7 +9,6 @@
 
 .index__banner {
   display: flex;
-  max-height: 35vh;
   width: 100%;
   justify-content: space-between;
   border-top: 4px solid white;
@@ -17,21 +18,34 @@
   flex: 1;
   background-color: $greenColor;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.layout__content--english .index__banner-text {
+  padding-left: 1rem;
+}
+
+.layout__content--chinese .index__banner-text {
+  text-align: center;
 }
 
 .index__banner p {
   width: 90%;
 }
 .index__big {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 .index__banner img {
   max-width: 300px;
+  height: auto;
+  display: none;
 }
 
 .index__title {
@@ -40,6 +54,10 @@
   color: $greenColor2;
   text-align: center;
   margin-top: 2rem;
+}
+
+.layout__content--chinese .index__title {
+  color: $greenColor2;
 }
 
 .index__item {
@@ -53,6 +71,10 @@
   margin-top: -0.6rem;
   padding-top: 0.8rem;
   flex: 1;
+}
+
+.layout__content--chinese .index__item p {
+  font-size: 1rem;
 }
 
 .index__number {
@@ -71,5 +93,18 @@
   }
   .index__number {
     font-size: 3.5rem;
+  }
+  .index__banner img {
+    display: block;
+  }
+  .index__banner-text {
+    font-size: 2.1rem;
+    padding: 0;
+  }
+  .index__big {
+    font-size: 3.5rem;
+  }
+  .layout__content--chinese .index__item p {
+    font-size: 1.3rem;
   }
 }

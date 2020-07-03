@@ -35,9 +35,12 @@ const TuitionFees = () => {
           {multiLingualText.tuitionFeesTitle[language]}
         </h1>
         <div className="tuitionFees__stage">
-          <h2 className="tuitionFees__subtitle">
-            {multiLingualText.tuitionFeesSubtitleFirst[language]}
-          </h2>
+          <h2
+            className="tuitionFees__subtitle"
+            dangerouslySetInnerHTML={{
+              __html: multiLingualText.tuitionFeesSubtitleFirst[language],
+            }}
+          ></h2>
           <p>{multiLingualText.tuitionFeesPara[language]}</p>
           <div className="tuitionFees__trial">
             <strong>{multiLingualText.tuitionFeesTrialLesson[language]}</strong>
@@ -71,9 +74,12 @@ const TuitionFees = () => {
           </div>
         </div>
         <div className="tuitionFees__stage">
-          <h2 className="tuitionFees__subtitle">
-            {multiLingualText.tuitionFeesSubtitleSecond[language]}
-          </h2>
+          <h2
+            className="tuitionFees__subtitle"
+            dangerouslySetInnerHTML={{
+              __html: multiLingualText.tuitionFeesSubtitleSecond[language],
+            }}
+          ></h2>
           <div className="tuitionFees__info">
             <strong>{multiLingualText.tuitionFees1to1[language]}</strong>{" "}
             {/* have separate chinese and english per person string */}

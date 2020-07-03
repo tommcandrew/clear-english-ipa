@@ -37,7 +37,12 @@ const multiLingualText = {
     chSim:
       "<strong>我们精於教</strong>导成人<strong>及</strong>10岁以上的青少年<strong>如何讲和写</strong>正统英语:",
     chTra:
-      "我們精於教導<strong>成人</strong>及<strong>10歲以上的青少年</strong>如何講和寫正統英語:",
+      "<strong>我們精於教</strong>導成人<strong>及</strong>10歲以上的青少年<strong>如何講和寫正統英語</strong>:",
+  },
+  indexBanner: {
+    en: `We emphasise <span class="index__big">practice<br /></span> in order to <span class="index__big">speak</span> and <span class="index__big">write</span> like a native British speaker.`,
+    chSim: `我们重视<span class="index__big">实习</span>, 活用英语, <span class="index__big">能写能讲</span>, 尤如英国人!`,
+    chTra: `我們重視<span class="index__big">實習</span>，活用英語，<span class="index__big">能寫能講</span>，尤如英國人!`,
   },
   indexList: {
     en: [
@@ -48,24 +53,24 @@ const multiLingualText = {
       "to understand their mistakes with <strong>thorough explanations</strong>.",
     ],
     chSim: [
-      "<strong>改掉口音</strong> (尤其是<strong>亚洲地区口音</strong>)",
-      "<strong>纠正发音</strong>",
-      "如何使用<strong>英语国际音标</strong>，并了解其中<strong>诀窍</strong>",
-      "培养<strong>写作技巧</strong> (掌握<strong>文法</strong>、<strong>词汇</strong>和<strong>组织</strong>)",
-      "<strong>清楚解释</strong>学员的<strong>误解</strong>或<strong>错误</strong>，令学员懂得如何纠正自己",
+      "<strong>改掉口音</strong> (尤其是<strong>亚洲地区口音</strong>);",
+      "<strong>纠正发音</strong>;",
+      "如何使用<strong>英语国际音标</strong>，并了解其中<strong>诀窍</strong>;",
+      "培养<strong>写作技巧</strong> (掌握<strong>文法</strong>、<strong>词汇</strong>和<strong>组织</strong>);",
+      "<strong>清楚解释</strong>学员的<strong>误解</strong>或<strong>错误</strong>，令学员懂得如何纠正自己。",
     ],
     chTra: [
-      "改掉口音 (尤其是亞洲地區口音)",
-      "糾正發音；",
-      "如何使用英語國際音標，並了解其中訣竅；",
-      "培養寫作技巧 (掌握文法、詞彙和組織)；",
-      "清楚解釋學員的誤解或錯誤，令學員懂得如何糾正自己",
+      "<strong>改掉口音</strong> (尤其是<strong>亞洲地區口音</strong>);",
+      "<strong>糾正發音</strong>;",
+      "如何使用<strong>英語國際音標</strong>，並了解其<strong>中訣竅</strong>;",
+      "培養<strong>寫作技巧</strong> (掌握<strong>文法</strong>、<strong>詞彙</strong>和<strong>組織</strong>);",
+      "<strong>清楚解釋</strong>學員的<strong>誤解</strong>或<strong>錯誤</strong>，令學員懂得如何糾正自己。",
     ],
   },
   teachingMethodTitle: {
     en: "We adopt a <strong>two-stage</strong> approach:",
-    chSim: "<strong>我们的教学设两阶段</strong>:",
-    chTra: "我們的教學設<strong>兩階段</strong>:",
+    chSim: `<strong><span class="dark">我们的教学设两阶段</span></strong>:`,
+    chTra: `<strong>我們的教學設<span class="dark">兩階段</span></strong>:`,
   },
   teachingMethodFirstStage: {
     en: "First stage:",
@@ -74,8 +79,8 @@ const multiLingualText = {
   },
   teachingMethodSubtitleFirst: {
     en: "Learn how to pronounce English sounds like a native British speaker.",
-    chSim: "<strong>学习怎样</strong>发音<strong>尤如英国人一样</strong>",
-    chTra: "學習怎樣發音尤如英國人一樣",
+    chSim: `学习怎样<span class="green">发音</span>尤如英国人一样`,
+    chTra: `學習怎樣<span class="green">發音</span>尤如英國人一樣`,
   },
   teachingMethodListFirst: {
     en: [
@@ -87,20 +92,20 @@ const multiLingualText = {
       "At the end of this stage, you should be able to:",
     ],
     chSim: [
-      "利用<strong>英语国际音标的44个音</strong>，学习如何正确发音",
-      "课堂提供优质教材，你有<strong>大量实践机会</strong>，<strong>老师会纠正学员错误</strong>",
-      "<strong>小组形式</strong>，网教最多4人－班，面授最多5人－班",
-      "<strong>共16课</strong> (每课2小时)",
-      "每课都有<strong>複习</strong>替你巩固基础，故此建议学员课堂後自行练习，以便能充分利用课堂",
-      "完成此阶段课堂後，你便能够：",
+      "利用<strong>英语国际音标的44个音</strong>，学习如何正确发音;",
+      "课堂提供优质教材，你有<strong>大量实践机会</strong>，<strong>老师会纠正学员错误</strong>;",
+      "<strong>小组形式</strong>，网教最多4人－班，面授最多5人－班;",
+      "<strong>共16课</strong> (每课2小时);",
+      "每课都有<strong>複习</strong>替你巩固基础，故此建议学员课堂後自行练习，以便能充分利用课堂;",
+      "完成此阶段课堂後，你便能够:",
     ],
     chTra: [
-      "利用<strong>英語國際音標的44個音</strong>，學習如何正確發音",
-      "課堂提供優質教材，你有<strong>大量實習機會，老師會糾正學員錯誤</strong>",
-      "<strong>小組形式</strong>，網教最多4人－班，面授最多5人－班；",
+      "利用<strong>英語國際音標的44個音</strong>，學習如何正確發音;",
+      "課堂提供優質教材，你有<strong>大量實習機會，老師會糾正學員錯誤</strong>;",
+      "<strong>小組形式</strong>，網教最多4人－班，面授最多5人－班;",
       "<strong>共16課</strong> (每課2小時) ；",
-      "每課都有<strong>複習</strong>替你鞏固基礎，故此建議學員課堂後自行練習，以便能充分利用課堂；",
-      "完成此階段課堂後，你便能夠",
+      "每課都有<strong>複習</strong>替你鞏固基礎，故此建議學員課堂後自行練習，以便能充分利用課堂;",
+      "完成此階段課堂後，你便能夠:",
     ],
   },
   teachingMethodSubListFirst: {
@@ -117,7 +122,7 @@ const multiLingualText = {
       "<strong>找出自己的弱点</strong>作日后改进。",
     ],
     chTra: [
-      "明白<strong>標準英國口音</strong>的44個音是怎樣做到",
+      "明白<strong>標準英國口音</strong>的<strong>44個音</strong>是怎樣做到。",
       "能如英國人一樣，懂得如何在<strong>每字</strong>和<strong>句子加重音</strong>。",
       "懂得如何<strong>運用語調</strong>尤如英國人。",
       "<strong>找出自己的弱點</strong>作日后改進。",
@@ -145,21 +150,21 @@ const multiLingualText = {
       "<strong>1-to-1</strong> or <strong>2-to-1 lessons</strong>, 1.5 hours for each lesson.",
     ],
     chSim: [
-      "此阶段的目标是<strong>减少你对老师的倚赖</strong>；",
-      "每课有独立话题给你<strong>实习口语；</strong>",
-      "我们不单会<strong>準确指出你发音</strong>和文法问题，更会指导你如何<strong>纠正自己</strong>",
-      "你可选择课堂后<strong>实习写作</strong>，并电邮给我们，在下一堂上我们会指导你如何改正错误",
-      "你学会在<strong>社交场合</strong>(如朋友聚会、同事閒谈、与陌生人初次见面等等) ，如何<strong>自然交谈</strong>",
-      "我们会在每一课替你<strong>複习你的弱点</strong>，以便改善你的发音、新字/词汇记忆。故此建议学员课堂後自行温习有困难的地方，以便能充分利用课堂；",
-      "<strong>1-对-1</strong> 或 <strong>2-对-1 课堂</strong>, 每堂1 小时30",
+      "此阶段的目标是<strong>减少你对老师的倚赖</strong>;",
+      "每课有独立话题给你<strong>实习口语；</strong>;",
+      "我们不单会<strong>準确指出你发音</strong>和<strong>文法问题</strong>，更会指导你如何<strong>纠正自己</strong>;",
+      "你可选择课堂后<strong>实习写作</strong>，并电邮给我们，在下一堂上我们会指导你如何改正错误;",
+      "你学会在<strong>社交场合</strong>(如朋友聚会、同事閒谈、与陌生人初次见面等等) ，如何<strong>自然交谈</strong>;",
+      "我们会在每一课替你<strong>複习你的弱点</strong>，以便改善你的发音、新字/词汇记忆。故此建议学员课堂後自行温习有困难的地方，以便能充分利用课堂;",
+      "<strong>1-对-1</strong> 或 <strong>2-对-1 课堂</strong>, 每堂1 小时30分。",
     ],
     chTra: [
       "此階段的目標是<strong>減少你對老師的倚賴</strong>；",
       "每課有獨立話題給你<strong>實習口語</strong>；",
-      "我們不單會準確指出你發音和<strong>文法問題</strong>，更會指導你如何糾正自己；",
-      "你可選擇課堂后<strong>實習寫作</strong>，並電郵給我們，在下一堂上我們會指導你如何改正錯誤；",
-      "你學會在<strong>社交場合</strong>(如朋友聚會、同事閒談、與陌生人初次見面等等) ，如何<strong>自然交談</strong>；",
-      "我們會在每一課替你<strong>複習你的弱點</strong>，以便改善你的發音、新字/詞彙記憶。故此建議學員課堂後自行溫習有困難的地方，以便能充分利用課堂；",
+      "我們不單會<strong>準確指出你發音</strong>和<strong>文法問題</strong>，更會指導你如何<strong>糾正自己</strong>；",
+      "你可選擇課堂后<strong>實習寫作</strong>，並電郵給我們，在下一堂上我們會指導你如何改正錯誤;",
+      "你學會在<strong>社交場合</strong>(如朋友聚會、同事閒談、與陌生人初次見面等等) ，如何<strong>自然交談</strong>;",
+      "我們會在每一課替你<strong>複習你的弱點</strong>，以便改善你的發音、新字/詞彙記憶。故此建議學員課堂後自行溫習有困難的地方，以便能充分利用課堂;",
       "<strong>1-對-1</strong> 或 <strong>2-對-1 課堂</strong>, 每堂1 小時30 分。",
     ],
   },
@@ -186,8 +191,8 @@ const multiLingualText = {
     ],
     chTra: [
       "我們的課堂適合<strong>任何10歲或以上人仕</strong>；",
-      "因課堂用英語教授，學員需具備<strong>明白英語指示的</strong>能力，如具有lower intermediate level或以上水平更佳；",
-      "<strong>網上課堂，需用以下軟件：</strong>:",
+      "因課堂用英語教授，學員需具備<strong>明白英語指示</strong>的能力，如具有lower intermediate level或以上水平更佳；",
+      "<strong>網上課堂，需用以下軟件</strong>:",
     ],
   },
   requirementsSublist: {
@@ -214,8 +219,8 @@ const multiLingualText = {
   },
   tuitionFeesSubtitleFirst: {
     en: "Stage One",
-    chSim: "第一阶段",
-    chTra: "第一階段",
+    chSim: `<span class="dark">第一阶段</span>`,
+    chTra: `<span class="dark">第一階段</span>`,
   },
   tuitionFeesPara: {
     en:
@@ -260,8 +265,8 @@ const multiLingualText = {
   },
   tuitionFeesSubtitleSecond: {
     en: "Stage Two",
-    chSim: "第二阶段",
-    chTra: "第二階段",
+    chSim: `<span class="dark">第二阶段</span>`,
+    chTra: `<span class="dark">第二階段</span>`,
   },
   tuitionFees1to1: {
     en: "1-to-1 lessons:",
@@ -316,7 +321,7 @@ const multiLingualText = {
       {
         title: "1-对-1 课堂：",
         body:
-          "学员必须在课堂开始前的最少24小时通知我们取消课堂，否则会作缺席处理而不获任何补偿",
+          "学员必须在课堂开始前的最少24小时通知我们取消课堂，否则会作缺席处理而不获任何补偿。",
       },
       {
         title: "2-对-1课堂:",
@@ -398,7 +403,7 @@ const multiLingualText = {
       "Kitty Lam, CELTA",
     ],
     chSim: [
-      "各位朋友：",
+      "各位朋友:",
 
       "我是<strong>英国剑桥大学认證的英语老师</strong>，也是土生土长的香港人，小时侯我上本地传统学校学习。你或许会很好奇想知道我作为一个成人，是如何去掉我很重的香港口音，并且想了解我为何现在可以说得一口流俐英语活像一个英国人。",
       "数年前，我洞察我的英语带有很重的香港口音，并且说话或写作时词不达意，有时侯更令人误会招致麻烦，所以我决定再学习英语。本来想找个好老师，谁不知很难找，<strong>前前後後在香港跟了超过60英国和美国老师学习，每当我问他们怎样去除香港口音，几乎所有老师都我说 :「对成人来说，这是不太可能的」</strong>！我每次听到他们给我同一个答案时，心裏会怀疑自己想讲英语活像英国人的梦想是不会成功的。但我没有放弃，最终我找到自己的方法并且成功说得一口地道英语。",
@@ -408,7 +413,7 @@ const multiLingualText = {
       "Kitty Lam, CELTA",
     ],
     chTra: [
-      "各位朋友：",
+      "各位朋友:",
       "我是<strong>英國劍橋大學認證的英語老師</strong>，也是土生土長的香港人，小時侯我上本地傳統學校學習。你或許會很好奇想知道我作為一個成人，是如何去掉我很重的香港口音，並且想了解我為何現在可以說得一口流俐英語活像一個英國人。",
       "數年前，我洞察我的英語帶有很重的香港口音，並且說話或寫作時詞不達意，有時侯更令人誤會招致麻煩，所以我決定再學習英語。本來想找個好老師，誰不知很難找，<strong>前前後後在香港跟了超過60英國和美國老師學習，每當我問他們怎樣去除香港口音，幾乎所有老師都我說 :「對成人來說，這是不太可能的」</strong>！我每次聽到他們給我同一個答案時，心裏會懷疑自己想講英語活像英國人的夢想是不會成功的。但我沒有放棄，最終我找到自己的方法並且成功說得一口地道英語。",
       "絕大多數英國或美國老師都能指出我們發音不正確或帶有口音，通常他們會叫我們看他們的咀唇怎樣移動，然後著我們跟隨他們講一次或數次。對我而然，單只看咀唇怎樣移動是不足夠的，我對怎樣移動舌頭和口部肌肉毫無頭緒，最後都是不能糾正錯誤。",
