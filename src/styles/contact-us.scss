@@ -27,6 +27,26 @@
   margin: 1rem 0;
 }
 
+.contactUs__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactUs__form input,
+.contactUs__form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact__send {
+  width: 35%;
+  margin: 0 auto;
+  align-self: center;
+}
+
 @media (min-width: 700px) {
   .contactUs__content {
     margin: 3rem 0;
@@ -38,5 +58,11 @@
   }
   .contactUs__inner h2 {
     font-size: 1.5rem;
+  }
+  .contactUs__form {
+    width: 50%;
+  }
+  .contact__send {
+    width: 25%;
   }
 }

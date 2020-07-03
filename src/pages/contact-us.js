@@ -19,6 +19,21 @@ const ContactUs = () => {
             {multiLingualText.contactUsEmail[language]} farbeyondlimit@gmail.com
           </h2>
           <h2>{multiLingualText.contactUsTel[language]} (852) 9170 7930</h2>
+          <div className="contactUs__form-wrapper">
+            <form
+              className="contactUs__form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              action="/success"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="email" placeholder="Your email" />
+              <textarea name="message" rows="15" placeholder="Your message" />
+              <input type="submit" className="contact__send" value="SEND" />
+            </form>
+          </div>
         </div>
       </div>
     </Layout>
