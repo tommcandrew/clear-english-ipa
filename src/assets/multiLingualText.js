@@ -41,7 +41,7 @@ const multiLingualText = {
   },
   indexList: {
     en: [
-      "to <strong>remove</strong> their <strong>accent</strong>,especially if they are from <strong>Asia</strong>.",
+      "to <strong>remove</strong> their <strong>accent</strong>, especially if they are from <strong>Asia</strong>.",
       "to <strong>correct</strong> their <strong>pronunciation mistakes</strong>.",
       "to know the <strong>tricks</strong> to using the <strong>International Phonetic Alphabet (IPA)</strong>.",
       "to <strong>write</strong> with <strong>good grammar</strong>, <strong>broad vocabulary</strong> and <strong>effective organisation</strong>.",

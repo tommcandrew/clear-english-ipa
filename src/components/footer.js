@@ -6,7 +6,11 @@ const Footer = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="footer__wrapper">
+    <div
+      className={`footer__wrapper ${
+        language === "chTra" && "footer__wrapper--chinese"
+      } ${language === "chSim" && "footer__wrapper--chinese"}`}
+    >
       <ul className="footer__nav">{generateNavLinks(language)}</ul>
       <div className="footer__contact">
         <div className="footer__email">Email: farbeyondlimit@gmail.com</div>

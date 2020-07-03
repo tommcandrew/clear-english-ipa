@@ -3,6 +3,14 @@
   flex-direction: column;
 }
 
+.header__wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__wrapper--chinese {
+  font-family: jhenghei;
+}
+
 .header__top {
   background: $blueColor;
   display: flex;
@@ -47,6 +55,10 @@
   font-size: 1rem;
   padding: 0.5rem;
   display: none;
+}
+
+.header__nav li:last-child a {
+  color: yellow;
 }
 
 .header__nav li a {

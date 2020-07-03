@@ -9,6 +9,14 @@
   position: relative;
 }
 
+.footer__wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__wrapper--chinese {
+  font-family: jhenghei;
+}
+
 .footer__nav {
   display: flex;
   flex-direction: column;

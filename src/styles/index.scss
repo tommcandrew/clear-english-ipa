@@ -5,6 +5,35 @@
   margin: 0 auto;
 }
 
+.index__banner {
+  display: flex;
+  max-height: 35vh;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 4px solid white;
+}
+
+.index__banner-text {
+  flex: 1;
+  background-color: $greenColor;
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index__banner p {
+  width: 90%;
+}
+.index__big {
+  font-size: 3rem;
+}
+
+.index__banner img {
+  max-width: 300px;
+}
+
 .index__title {
   font-size: 1rem;
   margin-bottom: 1.5rem;

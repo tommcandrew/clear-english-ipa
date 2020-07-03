@@ -6,7 +6,7 @@ const generateNavLinks = (language) => {
   if (language) {
     return multiLingualText.navList[language].map((item, index) => {
       let path;
-      if (item === "Home") {
+      if (multiLingualText.navList["en"][index] === "Home") {
         path = "/";
       } else {
         path = "/" + toKebabCase(multiLingualText.navList["en"][index]);

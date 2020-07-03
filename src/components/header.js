@@ -29,7 +29,11 @@ const Header = () => {
   };
 
   return (
-    <div className="header__wrapper">
+    <div
+      className={`header__wrapper ${
+        language === "chTra" && "header__wrapper--chinese"
+      } ${language === "chSim" && "header__wrapper--chinese"}`}
+    >
       <div className="header__top"></div>
       <div className="header__middle">
         <div className="header__info">

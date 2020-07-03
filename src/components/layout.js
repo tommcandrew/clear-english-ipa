@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "./header.js";
 import Footer from "../components/footer";
+import LanguageContext from "../context/LanguageContext";
 
 const Layout = ({ children }) => {
+  const { language } = useContext(LanguageContext);
+
+  useEffect(() => {
+    console.log(language);
+  }, [language]);
+
   return (
     <>
       <Header />
-      <div className="layout__content">{children}</div>
+      <div
+        className={`layout__content ${
+          language === "chTra" && "layout__content--chinese"
+        } ${language === "chSim" && "layout__content--chinese"}`}
+      >
+        {children}
+      </div>
       <Footer />
     </>
   );
