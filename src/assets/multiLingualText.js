@@ -83,7 +83,7 @@ const multiLingualText = {
     jap: [
       "<strong>アジア人</strong>特有の<strong>なまり</strong>を<strong>取る</strong>。",
       "やってしまいがちな<strong>発音ミス</strong>を<strong>修正</strong>する。",
-      "<strong>International Phonetic Alphabet国際発音記号 (IPA）</strong>をうまく使うコツを理解する。",
+      "<strong>International Phonetic Alphabet国際発音記号 (IPA)</strong>をうまく使うコツを理解する。",
       "<strong>正しい文法</strong>や、より<strong>伝わりやすい文の構成</strong>を学び<strong>語彙</strong>を広げる。",
       "間違いを理解できるまで<strong>徹底的に解説</strong>。",
     ],
