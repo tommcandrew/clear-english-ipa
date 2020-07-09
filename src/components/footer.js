@@ -19,6 +19,14 @@ const Footer = () => {
       <a href="/admin" className="footer__admin">
         Admin
       </a>
+      <div
+        className={`footer__japanese ${
+          language === "jap" && "footer__japanese--shown"
+        }`}
+      >
+        (日本語版は参考用です。
+        正確な契約条件については、英語版を参照してください。)
+      </div>
     </div>
   );
 };

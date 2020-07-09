@@ -19,6 +19,10 @@
   font-size: 1rem;
 }
 
+.layout__content--japanese .requirements__list {
+  font-size: 1.2rem;
+}
+
 .requirements__list li::before {
   content: "\2022";
   color: $blueColor;
