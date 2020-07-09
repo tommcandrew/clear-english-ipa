@@ -6,10 +6,6 @@ import LanguageContext from "../context/LanguageContext";
 const Layout = ({ children }) => {
   const { language } = useContext(LanguageContext);
 
-  useEffect(() => {
-    console.log(language);
-  }, [language]);
-
   return (
     <>
       <Header />
