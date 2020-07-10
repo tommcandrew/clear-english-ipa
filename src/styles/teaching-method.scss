@@ -47,7 +47,7 @@
 }
 
 .teachingMethod__list {
-  list-style: circle;
+  list-style: disc;
   flex: 1;
   margin-left: 1rem;
   padding: 2rem 0;
@@ -63,6 +63,24 @@
 
 .teachingMethod__list li {
   margin: 1rem 0;
+  list-style: none;
+}
+
+.teachingMethod__main-item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.teachingMethod__main-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: $blueColor;
+  border-radius: 50%;
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .teachingMethod__sublist {
@@ -85,7 +103,7 @@
 }
 
 .teachingMethod__subtitle--second {
-  color: $greenColor2;
+  color: $blueColor;
   font-size: 1.1rem;
   text-align: center;
 }
@@ -157,6 +175,8 @@
 
 .teachingMethod__medium {
   font-style: italic;
+  color: $blueColor;
+  font-size: 1.3rem;
 }
 
 @media (min-width: 700px) {

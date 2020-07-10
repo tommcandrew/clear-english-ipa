@@ -25,7 +25,7 @@ const CancellationPolicy = (props) => {
           {multiLingualText.cancellationPolicyList[language].map((item) => (
             <div className="cancellationPolicy__policy" key={item}>
               <h3>{item.title}</h3>
-              <p>{item.body}</p>
+              <p dangerouslySetInnerHTML={{ __html: item.body }}></p>
             </div>
           ))}
         </div>

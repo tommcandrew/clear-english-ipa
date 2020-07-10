@@ -42,6 +42,10 @@
   color: $greenColor;
 }
 
+.cancellationPolicy__policy strong {
+  color: black;
+}
+
 @media (min-width: 700px) {
   .cancellationPolicy__content {
     margin: 3rem 0;

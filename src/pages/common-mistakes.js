@@ -115,9 +115,12 @@ const CommonMistakes = (props) => {
         </h1>
         <div className="commonMistakes__email-wrapper">
           <img src={email} alt="email" />
-          <h1 className="commonMistakes__email">
-            {multiLingualText.commonMistakesEmail[language]}
-          </h1>
+          <h1
+            className="commonMistakes__email"
+            dangerouslySetInnerHTML={{
+              __html: multiLingualText.commonMistakesEmail[language],
+            }}
+          ></h1>
         </div>
       </div>
     </Layout>

@@ -33,12 +33,12 @@
 
 .header__info p {
   color: $greenColor;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
 }
 
 .header__info img {
-  width: 60px;
+  width: 80px;
   margin-left: 0.5rem;
 }
 
@@ -86,10 +86,10 @@
 
 @media (min-width: 700px) {
   .header__info p {
-    font-size: 2.8rem;
+    font-size: 3.3rem;
   }
   .header__info img {
-    width: 80px;
+    width: 120px;
     margin-left: 1rem;
   }
   .header__select {

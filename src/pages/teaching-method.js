@@ -44,6 +44,7 @@ const TeachingMethod = (props) => {
                     dangerouslySetInnerHTML={{
                       __html: item,
                     }}
+                    className="teachingMethod__main-item"
                   ></li>
                 )
               )}
@@ -86,6 +87,7 @@ const TeachingMethod = (props) => {
                     dangerouslySetInnerHTML={{
                       __html: item,
                     }}
+                    className="teachingMethod__main-item"
                   ></li>
                 )
               )}

@@ -23,11 +23,9 @@ const AboutTheTeacher = (props) => {
           {multiLingualText.aboutTheTeacherTitle[language]}
         </h1>
         <div className="aboutTheTeacher__inner">
-          <img
-            src={kitty}
-            alt="the teacher - Kitty Lam"
-            className="aboutTheTeacher__kitty"
-          />
+          <div className="aboutTheTeacher__kitty">
+            <img src={kitty} alt="the teacher - Kitty Lam" />
+          </div>
           <div className="aboutTheTeacher__text">
             {multiLingualText.aboutTheTeacherParas[language].map((para) => (
               <p dangerouslySetInnerHTML={{ __html: para }}></p>

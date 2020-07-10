@@ -59,21 +59,29 @@ const TuitionFees = (props) => {
           <p className="tuitionFees__payments">
             {multiLingualText.tuitionFees2Payments[language]}
           </p>
-          <div className="tuitionFees__info">
-            <strong>
-              {multiLingualText.tuitionFeesFirst8Lessons[language]}
-            </strong>{" "}
-            {multiLingualText.tuitionFees2HoursPerLesson[language]}{" "}
+          <div className="tuitionFees__info tuitionFees__info--first">
+            <div>
+              <span>
+                {multiLingualText.tuitionFeesFirst8Lessons[language]}{" "}
+              </span>
+              <span>
+                {multiLingualText.tuitionFees2HoursPerLesson[language]}
+              </span>
+            </div>
             <p>
               HK${tuitionFees.stage1First8LessonsPrice}{" "}
               {multiLingualText.tuitionFees16Hours[language]}
             </p>
           </div>
-          <div className="tuitionFees__info">
-            <strong>
-              {multiLingualText.tuitionFeesSecond8Lessons[language]}
-            </strong>{" "}
-            {multiLingualText.tuitionFees2HoursPerLesson[language]}{" "}
+          <div className="tuitionFees__info tuitionFees__info--second">
+            <div>
+              <span>
+                {multiLingualText.tuitionFeesSecond8Lessons[language]}{" "}
+              </span>
+              <span>
+                {multiLingualText.tuitionFees2HoursPerLesson[language]}
+              </span>
+            </div>
             <p>
               HK${tuitionFees.stage1Second8LessonsPrice}{" "}
               {multiLingualText.tuitionFees16Hours[language]}
@@ -103,7 +111,7 @@ const TuitionFees = (props) => {
             <p>
               {language === "chSim" && "每人"}
               {language === "chTra" && "每人"}HK$
-              {tuitionFees.stage22To1LessonsPrice}{" "}
+              {tuitionFees.stage22To1LessonsPrice}
               {language === "en" && "/per person"}{" "}
               {multiLingualText.tuitionFeesPriceInfo[language]}
             </p>

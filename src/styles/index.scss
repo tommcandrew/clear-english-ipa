@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
+@font-face {
+  font-family: eloquent;
+  src: url("../assets/EloquentJFCaptionPro.ttf");
+}
+
 .index__content {
   align-self: flex-end;
   margin: 3rem 0;
@@ -41,6 +46,7 @@
 }
 .index__big {
   font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .index__yellow {
@@ -72,10 +78,12 @@
 }
 
 .index__item p {
-  border-top: 1px solid #888;
+  border-top: 2px solid $blueColor;
   margin-top: -0.6rem;
   padding-top: 0.8rem;
   flex: 1;
+  margin-left: -5px;
+  padding-left: 10px;
 }
 
 .layout__content--chinese .index__item p {
@@ -90,6 +98,17 @@
   font-size: 2.5rem;
   color: $blueColor;
   margin-right: 0.5rem;
+  font-family: eloquent;
+}
+
+.index__bold-yellow {
+  font-weight: 500;
+  color: yellow;
+}
+
+.index__light-green {
+  color: rgb(92, 195, 177);
+  font-weight: bold;
 }
 
 @media (min-width: 700px) {

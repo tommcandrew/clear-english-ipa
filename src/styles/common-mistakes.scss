@@ -84,6 +84,14 @@
   padding: 0 0.5rem;
 }
 
+.commonMistakes__email a {
+  text-decoration: underline;
+}
+
+.commonMistakes__email a:visited {
+  color: $blueColor;
+}
+
 .commonMistakes__times {
   color: red;
   font-size: 2.5rem;
@@ -146,6 +154,18 @@
     text-align: left;
     margin-top: 0;
   }
+  .layout__content--chinese .commonMistakes__title {
+    font-size: 2.3rem;
+  }
+  .layout__content--japanese .commonMistakes__title {
+    font-size: 2.3rem;
+  }
+  .layout__content--chinese .commonMistakes__subtitle {
+    font-size: 1.6rem;
+  }
+  .layout__content--japanese .commonMistakes__subtitle {
+    font-size: 1.6rem;
+  }
   .commonMistakes__list {
     width: 80%;
   }
@@ -179,5 +199,17 @@
   }
   .commonMistakes__email {
     padding: 0;
+  }
+  .layout__content--chinese .commonMistakes__email {
+    font-size: 1.6rem;
+  }
+  .layout__content--japanese .commonMistakes__email {
+    font-size: 1.6rem;
+  }
+  .layout__content--chinese .commonMistakes__ribbon {
+    font-size: 1.6rem;
+  }
+  .layout__content--japanese .commonMistakes__ribbon {
+    font-size: 1.6rem;
   }
 }

@@ -42,18 +42,18 @@ const multiLingualText = {
     ],
   },
   indexBanner: {
-    en: `We emphasise <span class="index__big">practice<br /></span> in order to <span class="index__big">speak</span> and <span class="index__big">write</span> like a native British speaker.`,
-    chSim: `我们重视<span class="index__big">实习</span>, 活用英语, <span class="index__big">能写能讲</span>, 尤如英国人!`,
-    chTra: `我們重視<span class="index__big">實習</span>，活用英語，<span class="index__big">能寫能講</span>，尤如英國人!`,
-    jap: `ネイティブな<span class="index__yellow">イギリス英語を使えるようになるための、アウトプットの練習を重要視したレッスンを提供</span>します！`,
+    en: `We emphasise <span class="index__big">practice<br /></span> in order to <span class="index__big">speak</span> and <span class="index__big">write</span> like a <span class="index__bold-yellow">native British speaker</span>.`,
+    chSim: `我们重视<span class="index__big">实习</span>, 活用英语, <span class="index__big">能写能讲</span>, <span class="index__bold-yellow">尤如英国人</span>!`,
+    chTra: `我們重視<span class="index__big">實習</span>，活用英語，<span class="index__big">能寫能講</span>，<span class="index__bold-yellow">尤如英國人</span>!`,
+    jap: `ネイティブな<span class="index__yellow">イギリス英語を使えるようになるための、アウトプットの練習を重要視した</span>レッスンを提供します！`,
   },
   indexTitle: {
     en:
-      "We are excellent at teaching <strong>adults</strong> and <strong>young learners (aged 10+)</strong>:",
+      "<strong>We are excellent at teaching </strong>adults <strong>and </strong>young learners (aged 10+)<strong>:</strong>",
     chSim:
-      "<strong>我们精於教</strong>导成人<strong>及</strong>10岁以上的青少年<strong>如何讲和写</strong>正统英语:",
+      "<strong>我们精於教导</strong>成人<strong>及</strong>10岁以上的青少年<strong>如何讲和写</strong>正统英语:",
     chTra:
-      "<strong>我們精於教</strong>導成人<strong>及</strong>10歲以上的青少年<strong>如何講和寫正統英語</strong>:",
+      "<strong>我們精於教導</strong>成人<strong>及</strong>10歲以上的青少年<strong>如何講和寫正統英語</strong>:",
     jap:
       "<strong>特に</strong>成人、10歳以上のお子さん<strong>を対象にしています</strong>:",
   },
@@ -62,21 +62,21 @@ const multiLingualText = {
     en: [
       "to <strong>remove</strong> their <strong>accent</strong>, especially if they are from <strong>Asia</strong>.",
       "to <strong>correct</strong> their <strong>pronunciation mistakes</strong>.",
-      "to know the <strong>tricks</strong> to using the <strong>International Phonetic Alphabet (IPA)</strong>.",
+      "to know the <span class='index__light-green'>tricks</span> to using the <strong>International Phonetic Alphabet (IPA)</strong>.",
       "to <strong>write</strong> with <strong>good grammar</strong>, <strong>broad vocabulary</strong> and <strong>effective organisation</strong>.",
       "to understand their mistakes with <strong>thorough explanations</strong>.",
     ],
     chSim: [
       "<strong>改掉口音</strong> (尤其是<strong>亚洲地区口音</strong>);",
       "<strong>纠正发音</strong>;",
-      "如何使用<strong>英语国际音标</strong>，并了解其中<strong>诀窍</strong>;",
+      "如何使用<strong>英语国际音标</strong>，并了解其中<span class='index__light-green'>诀窍</span>;",
       "培养<strong>写作技巧</strong> (掌握<strong>文法</strong>、<strong>词汇</strong>和<strong>组织</strong>);",
       "<strong>清楚解释</strong>学员的<strong>误解</strong>或<strong>错误</strong>，令学员懂得如何纠正自己。",
     ],
     chTra: [
       "<strong>改掉口音</strong> (尤其是<strong>亞洲地區口音</strong>);",
       "<strong>糾正發音</strong>;",
-      "如何使用<strong>英語國際音標</strong>，並了解其<strong>中訣竅</strong>;",
+      "如何使用<strong>英語國際音標</strong>，並了解其中<strong>訣竅</strong>;",
       "培養<strong>寫作技巧</strong> (掌握<strong>文法</strong>、<strong>詞彙</strong>和<strong>組織</strong>);",
       "<strong>清楚解釋</strong>學員的<strong>誤解</strong>或<strong>錯誤</strong>，令學員懂得如何糾正自己。",
     ],
@@ -90,8 +90,8 @@ const multiLingualText = {
   },
   teachingMethodTitle: {
     en: "We adopt a <strong>two-stage</strong> approach:",
-    chSim: `<strong><span class="dark">我们的教学设两阶段</span></strong>:`,
-    chTra: `<strong>我們的教學設<span class="dark">兩階段</span></strong>:`,
+    chSim: `我们的教学设<strong>两阶段</strong>:`,
+    chTra: `我們的教學設<strong>兩階段</strong>:`,
     jap: `<strong>２段階</strong>に分けた教育メソッドを実施します:`,
   },
   teachingMethodFirstStage: {
@@ -101,7 +101,8 @@ const multiLingualText = {
     jap: "第一ステップ：",
   },
   teachingMethodSubtitleFirst: {
-    en: "Learn how to pronounce English sounds like a native British speaker.",
+    en:
+      "Learn how to <span class='green'>pronounce English sounds</span> like a native British speaker.",
     chSim: `学习怎样<span class="green">发音</span>尤如英国人一样`,
     chTra: `學習怎樣<span class="green">發音</span>尤如英國人一樣`,
     jap: `まずイギリス人のような<span class="green">ネイティブアクセント</span>を学ぶ`,
@@ -118,7 +119,7 @@ const multiLingualText = {
     chSim: [
       "利用<strong>英语国际音标的44个音</strong>，学习如何正确发音;",
       "课堂提供优质教材，你有<strong>大量实践机会</strong>，<strong>老师会纠正学员错误</strong>;",
-      "<strong>小组形式</strong>，网教最多4人－班，面授最多5人－班;",
+      "<strong>小组形式</strong>，网教最多4人一班，面授最多5人一班;",
       "<strong>共16课</strong> (每课2小时);",
       "每课都有<strong>複习</strong>替你巩固基础，故此建议学员课堂後自行练习，以便能充分利用课堂;",
       "完成此阶段课堂後，你便能够:",
@@ -126,7 +127,7 @@ const multiLingualText = {
     chTra: [
       "利用<strong>英語國際音標的44個音</strong>，學習如何正確發音;",
       "課堂提供優質教材，你有<strong>大量實習機會，老師會糾正學員錯誤</strong>;",
-      "<strong>小組形式</strong>，網教最多4人－班，面授最多5人－班;",
+      "<strong>小組形式</strong>，網教最多4人一班，面授最多5人一班;",
       "<strong>共16課</strong> (每課2小時) ；",
       "每課都有<strong>複習</strong>替你鞏固基礎，故此建議學員課堂後自行練習，以便能充分利用課堂;",
       "完成此階段課堂後，你便能夠:",
@@ -137,7 +138,6 @@ const multiLingualText = {
       "<strong>少人数制</strong>（オンラインでは最大4人、教室では最大5人）。",
       "各レッスン２時間、<strong>合計16レッスン</strong>行います。",
       "前回レッスンの<strong>復習</strong>を行い学んだことをしっかり身につけさせ強化します。そのためレッスン後は毎回自分で復習することが大切です。",
-      "完成此階段課堂後，你便能夠。",
       "このステップの終了時には以下のことができるようになります:",
     ],
   },
@@ -175,7 +175,8 @@ const multiLingualText = {
     jap: "第二ステップ：",
   },
   teachingMethodSubtitleSecond: {
-    en: "Practise to overcome your weaknesses and learn to correct yourself.",
+    en:
+      "Practise to <span class='green'>overcome your weaknesses</span> and learn to <span class='green'>correct yourself</span>.",
     chSim: "<strong>实践</strong>改进弱点，<strong>并学懂怎样</strong>纠正自己",
     chTra: "<strong>實習</strong>改進弱點，<strong>並學懂怎樣</strong>糾正自己",
     jap:
@@ -210,7 +211,7 @@ const multiLingualText = {
       "<strong>1-對-1</strong> 或 <strong>2-對-1 課堂</strong>, 每堂1 小時30 分。",
     ],
     jap: [
-      "<strong>講師がいなくて</strong>も自分で発音を直していく方法を身につけます。",
+      "<strong>講師がいなくても自分で</strong>発音を直していく方法を身につけます。",
       "レッスン毎にトピックに沿って<strong>スピーキングを練習します</strong>。",
       "<strong>発音や文法の間違いを特定する</strong>だけでなく、<strong>自分で理解し自分で修正</strong>を続けていけるように指導します。",
       "レッスン後に<strong>ライティング</strong>をemailで送り講師がチェック、次のレッスンで自分で修正する作業のお手伝いをします。",
@@ -221,9 +222,9 @@ const multiLingualText = {
   },
   teachingMethodMedium: {
     en: "Medium of instruction: <strong>English</strong>",
-    chSim: "<strong>教学语言: 英语</strong>",
-    chTra: "<strong>教學語言: 英語</strong>",
-    jap: "<strong>授業は全て英語で行います</strong>。",
+    chSim: "教学语言: <strong>英语</strong>",
+    chTra: "教學語言: <strong>英語</strong>",
+    jap: "授業は全て<strong>英語</strong>で行います。",
   },
   requirementsTitle: {
     en: "Requirements",
@@ -248,7 +249,7 @@ const multiLingualText = {
       "<strong>網上課堂，需用以下軟件</strong>:",
     ],
     jap: [
-      "<strong>10歳以上の</strong>方ならどなたでも申し込めます。",
+      "<strong>10歳以上の方</strong>ならどなたでも申し込めます。",
       "<strong>指導は全て英語</strong>ですので、初中級以上の基礎がある方が望ましいです。",
       ,
       "<strong>オンラインレッスンでは以下のものを使用します</strong>:",
@@ -372,17 +373,17 @@ const multiLingualText = {
       {
         title: "For small group lessons:",
         body:
-          "Unfortunately missed group lessons cannot be rescheduled. However,if there is another group taking a similar lesson the same week,we will try our best to fit you in it. Otherwise, you can opt to pay an additional HK$600 to have a private lesson to learn the topics which you missed in the class. Please note that the length of that private lesson may last less than 2 hours.",
+          "Unfortunately missed group lessons cannot be rescheduled. However, if there is another group taking a similar lesson the same week, we will try our best to fit you in it. Otherwise, you can opt to pay an additional HK$600 to have a private lesson to learn the topics which you missed in the class. Please note that the length of that private lesson may last less than 2 hours.",
       },
       {
         title: "For 1-to-1 lessons:",
         body:
-          "Please inform us at least 24 hours before the lesson start time if you need to cancel or reschedule it. Forgetting to do so will result in the lesson being marked as missed in your attendance. Missed lessons cannot be rescheduled, which means payments for missed lessons are not reusable, refundable, or transferable.",
+          "Please inform us <strong>at least 24 hours before the lesson start time</strong> if you need to cancel or reschedule it. Forgetting to do so will result in the lesson being marked as missed in your attendance. Missed lessons cannot be rescheduled, which means payments for missed lessons are not reusable, refundable, or transferable.",
       },
       {
         title: "For 2-to-1 lessons:",
         body:
-          "Missed 2-to-1 lessons cannot be rescheduled. However, if both the students in the same group agree to cancel a particular lesson and  inform us at least 24 hours before the lesson start time, that lesson can be rescheduled to another time or postponed one week.",
+          "Missed 2-to-1 lessons cannot be rescheduled. However, <strong>if both the students in the same group agree to cancel a particular lesson and  inform us at least 24 hours before the lesson start time</strong>, that lesson can be rescheduled to another time or postponed one week.",
       },
       {
         title: "Expiration of 1-to-1 and 2-to-1 lessons:",
@@ -400,15 +401,15 @@ const multiLingualText = {
       {
         title: "1-对-1 课堂：",
         body:
-          "学员必须在课堂开始前的最少24小时通知我们取消课堂，否则会作缺席处理而不获任何补偿。",
+          "学员必须在<strong>课堂开始前的最少24小时通知</strong>我们取消课堂，否则会作缺席处理而不获任何补偿。",
       },
       {
         title: "2-对-1课堂:",
         body:
-          "所有缺课原则上将不会有补课或补偿，但如果同班的两位学员同意取消课堂，并在课堂开始前的最少24小时通知我们，那麽我们会安排另一时段补课或延期一星期。",
+          "所有缺课原则上将不会有补课或补偿，但<strong>如果同班的两位学员同意取消课堂，并在课堂开始前的最少24小时通知我们</strong>，那麽我们会安排另一时段补课或延期一星期。",
       },
       {
-        title: "1-对-1 / 2-对-1 课堂结束期：",
+        title: "1-对-1 / 2-对-1 课堂结束期:",
         body: "学员需在付款后2个月内完成所有课堂。",
       },
     ],
@@ -422,15 +423,15 @@ const multiLingualText = {
       {
         title: "1-對-1課堂：",
         body:
-          "學員必須在課堂開始前的最少24小時通知我們取消課堂，否則會作缺席處理而不獲任何補償。",
+          "學員必須在<strong>課堂開始前的最少24小時通知</strong>我們取消課堂，否則會作缺席處理而不獲任何補償。",
       },
       {
         title: "2-對-1課堂：",
         body:
-          "所有缺課原則上將不會有補課或補償，但如果同班的兩位學員同意取消課堂，並在課堂開始前的最少24小時通知我們，那麼我們會安排另一時段補課或延期一星期。",
+          "所有缺課原則上將不會有補課或補償，但<strong>如果同班的兩位學員同意取消課堂，並在課堂開始前的最少24小時通知我們</strong>，那麼我們會安排另一時段補課或延期一星期。",
       },
       {
-        title: "1-對-1  /  2-對-1 課堂結束期：",
+        title: "1-對-1  /  2-對-1 課堂結束期:",
         body: "學員需在付款后2個月內完成所有課堂。",
       },
     ],
@@ -444,15 +445,15 @@ const multiLingualText = {
       {
         title: "個人レッスン:",
         body:
-          "ッスン開始の24時間前までにキャンセル、もしくはスケジュール変更をご連絡下さい。24時間を超えた場合は欠席となり、返金、予約変更等が出来なくなりますのでお気をつけ下さい。",
+          "<strong>レッスン開始の24時間前まで</strong>にキャンセル、もしくはスケジュール変更をご連絡下さい。24時間を超えた場合は欠席となり、返金、予約変更等が出来なくなりますのでお気をつけ下さい。",
       },
       {
         title: "2人クラス:",
         body:
-          "2人クラスの欠席はスケジュールは変更できませんが、もし2人同時に同じレッスンのスケジュール変更がご希望の場合はレッスン開始前24時間を越えていなければレッスン日時の変更、延期が可能です。",
+          "2人クラスの欠席はスケジュールは変更できませんが、もし<strong>2人同時に同じレッスンのスケジュール変更がご希望の場合はレッスン開始前24時間を越えていなければ</strong>レッスン日時の変更、延期が可能です。",
       },
       {
-        title: "個人レッスン、2人クラスの有効期間",
+        title: "個人レッスン、2人クラスの有効期間:",
         body: "授業料支払い後は２ヶ月間受講が可能です。",
       },
     ],
@@ -489,11 +490,14 @@ const multiLingualText = {
     jap: "レッスンに参加して正しい英語の使い方を学びましょう！",
   },
   commonMistakesEmail: {
-    en: "Email us for an interview and a trial lesson over the internet.",
-    chSim: "请 电邮 给我们以便安排网上面谈及试课。",
-    chTra: "請 電郵 給我們以便安排網上面談及試課 。",
+    en:
+      "<a href='/contact-us'>Email us</a> for an interview and a trial lesson over the internet.",
+    chSim:
+      "请 <a href='/chSim/contact-us'>电邮</a> 给我们以便安排网上面谈及试课。",
+    chTra:
+      "請 <a href='/chTra/contact-us'>電郵</a> 給我們以便安排網上面談及試課 。",
     jap:
-      "いつでも Email でお問い合わせ下さい、お試しレッスンをオンラインで提供します。",
+      "いつでも <a href='/jap/contact-us'>Email</a> でお問い合わせ下さい、お試しレッスンをオンラインで提供します。",
   },
   aboutTheTeacherTitle: {
     en: "About the teacher",
@@ -514,7 +518,7 @@ const multiLingualText = {
     chSim: [
       "各位朋友:",
       "我是<strong>英国剑桥大学认證的英语老师</strong>，也是土生土长的香港人，小时侯我上本地传统学校学习。你或许会很好奇想知道我作为一个成人，是如何去掉我很重的香港口音，并且想了解我为何现在可以说得一口流俐英语活像一个英国人。",
-      "数年前，我洞察我的英语带有很重的香港口音，并且说话或写作时词不达意，有时侯更令人误会招致麻烦，所以我决定再学习英语。本来想找个好老师，谁不知很难找，<strong>前前後後在香港跟了超过60英国和美国老师学习，每当我问他们怎样去除香港口音，几乎所有老师都我说 :「对成人来说，这是不太可能的」</strong>！我每次听到他们给我同一个答案时，心裏会怀疑自己想讲英语活像英国人的梦想是不会成功的。但我没有放弃，最终我找到自己的方法并且成功说得一口地道英语。",
+      "数年前，我洞察我的英语带有很重的香港口音，并且说话或写作时词不达意，有时侯更令人误会招致麻烦，所以我决定再学习英语。本来想找个好老师，谁不知很难找，<strong>前前後後在香港跟了超过60英国和美国老师学习，每当我问他们怎样去除香港口音，几乎所有老师都我说 :「对成人来说，这是不太可能的</strong>！」我每次听到他们给我同一个答案时，心裏会怀疑自己想讲英语活像英国人的梦想是不会成功的。但我没有放弃，最终我找到自己的方法并且成功说得一口地道英语。",
       "绝大多数英国或美国老师都能指出我们发音不正确或带有口音，通常他们会叫我们看他们的咀唇怎样移动，然後著我们跟随他们讲一次或数次。对我而然，单只看咀唇怎样移动是不足够的，我对怎样移动舌头和口部肌肉毫无头绪，最後都是不能纠正错误。",
       `我们说母语是用一组与英语不同的肌肉，英国或美国老师跟本就不理解我们怎样移动我们的口部肌肉，故此他们往往不能够替我们解决问题。<strong>经过多年努力，我终於找到去除口音和纠正发音的诀窍</strong>。如你对我的经历有同感，我相信我可以帮到你。<strong>你可 <a href="/chSim/contact-us">电邮</a>给我，大家约一个时间在网上见面，然後你可告诉我你想改善什麽，我也会坦白告诉你我有什麽地方可以帮到手</strong>。`,
       "<strong>除了精於教导学生改善会话能力，我亦拥有极佳的文法和写作技巧。我相信我可以帮到你如何正确使用英语并与人沟通无阻</strong>。最後多谢流览我的网页！",
@@ -523,7 +527,7 @@ const multiLingualText = {
     chTra: [
       "各位朋友:",
       "我是<strong>英國劍橋大學認證的英語老師</strong>，也是土生土長的香港人，小時侯我上本地傳統學校學習。你或許會很好奇想知道我作為一個成人，是如何去掉我很重的香港口音，並且想了解我為何現在可以說得一口流俐英語活像一個英國人。",
-      "數年前，我洞察我的英語帶有很重的香港口音，並且說話或寫作時詞不達意，有時侯更令人誤會招致麻煩，所以我決定再學習英語。本來想找個好老師，誰不知很難找，<strong>前前後後在香港跟了超過60英國和美國老師學習，每當我問他們怎樣去除香港口音，幾乎所有老師都我說 :「對成人來說，這是不太可能的」</strong>！我每次聽到他們給我同一個答案時，心裏會懷疑自己想講英語活像英國人的夢想是不會成功的。但我沒有放棄，最終我找到自己的方法並且成功說得一口地道英語。",
+      "數年前，我洞察我的英語帶有很重的香港口音，並且說話或寫作時詞不達意，有時侯更令人誤會招致麻煩，所以我決定再學習英語。本來想找個好老師，誰不知很難找，<strong>前前後後在香港跟了超過60英國和美國老師學習，每當我問他們怎樣去除香港口音，幾乎所有老師都我說 :「對成人來說，這是不太可能的</strong>！」我每次聽到他們給我同一個答案時，心裏會懷疑自己想講英語活像英國人的夢想是不會成功的。但我沒有放棄，最終我找到自己的方法並且成功說得一口地道英語。",
       "絕大多數英國或美國老師都能指出我們發音不正確或帶有口音，通常他們會叫我們看他們的咀唇怎樣移動，然後著我們跟隨他們講一次或數次。對我而然，單只看咀唇怎樣移動是不足夠的，我對怎樣移動舌頭和口部肌肉毫無頭緒，最後都是不能糾正錯誤。",
       `我們說母語是用一組與英語不同的肌肉，英國或美國老師跟本就不理解我們怎樣移動我們的口部肌肉，故此他們往往不能夠替我們解決問題。<strong>經過多年努力，我終於找到去除口音和糾正發音的訣竅。如你對我的經歷有同感，我相信我可以幫到你。你可 <a href="/chTra/contact-us">電郵</a> 給我，大家約一個時間在網上見面，然後你可告訴我你想改善什麼，我也會坦白告訴你我有什麼地方可以幫到手</strong>。`,
       "<strong>除了精於教導學生改善會話能力，我亦擁有極佳的文法和寫作技巧</strong>。我相信我可以幫到你如何正確使用英語並與人溝通無阻。最後多謝流覽我的網頁！",
@@ -534,7 +538,7 @@ const multiLingualText = {
       "私は、<strong>ケンブリッジ大学のCELTA正式認定英語講師</strong>です。一般的にアクセントが強い香港で生まれ育ったのにどうやってアジア特有のアクセントを直したのか不思議に思う方もいるかもしれません。",
       "数年前のある日、私は自分の英語が強い香港なまりであり、英語でうまく自分を表現できていないことに気づきました。ネイティブのように話したいと思いましたが、良い先生を探すのは困難でした。香港内でも<strong>60人のネイティブ講師</strong>に習いましたが私が強い香港なまりを取りたいと伝えても、<strong>ほとんどの講師が「大人になってから発音を改善するのは無理だよ。」と言いました</strong>。がっくり来ましたが、それらの先生たちの言うことを無視して自分でその方法を編み出しました。",
       "ネイティブ講師たちは、我々アジア人の発音ミスを指摘をし、彼らの口の動きを観察して真似するように指導します。しかし唇の動きは見えても、舌の動きや口の筋肉の使い方までは見えないので、なまりを取ることが難しいのです。",
-      `母国語が違えば、英語とは筋肉の使い方が異なります。ネイティブ講師達はアジア人の口の動かし方を理解していないので、<strong>何が原因で発音が悪いのかまでは理解できていません。そこで、何年も自分で考え、研究した結果、私は発音ミスを修正するコツを見つけました</strong>。もしあなたも同じ経験があるようであれば、是非私のレッスンを受けて下さい。<strong><a href="/jap/contact-us">Email</a>でご相談いただければ、オンラインで面接できる日時を調整します。あなたの英語のどこを改善したいかご自由に相談いただければ、何かお手伝いができるかと思います</strong>。`,
+      `母国語が違えば、英語とは筋肉の使い方が異なります。ネイティブ講師達はアジア人の口の動かし方を理解していないので、何が原因で発音が悪いのかまでは理解できていません。そこで、何年も自分で考え、研究した結果、私は発音ミスを修正するコツを見つけました。もしあなたも同じ経験があるようであれば、是非私のレッスンを受けて下さい。<strong><a href="/jap/contact-us">Email</a>でご相談いただければ、オンラインで面接できる日時を調整します。あなたの英語のどこを改善したいかご自由に相談いただければ、何かお手伝いができるかと思います</strong>。`,
       "<strong>アクセントやイギリス英語の発音だけでなく、文法やライティングを指導することもできます。自分を表現したり、伝えたいことを正確に伝える英語になるために力になれると思います</strong>。遠慮なくメールでご相談ください。",
     ],
   },
