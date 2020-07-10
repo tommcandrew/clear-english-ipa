@@ -5,8 +5,8 @@ const Footer = ({ language }) => {
   return (
     <div
       className={`footer__wrapper ${
-        language === "chTra" && "footer__wrapper--chinese"
-      } ${language === "chSim" && "footer__wrapper--chinese"}`}
+        language === "tc" && "footer__wrapper--chinese"
+      } ${language === "sc" && "footer__wrapper--chinese"}`}
     >
       <ul className="footer__nav">{generateNavLinks(language)}</ul>
       <div className="footer__contact">
@@ -18,7 +18,7 @@ const Footer = ({ language }) => {
       </a>
       <div
         className={`footer__japanese ${
-          language === "jap" && "footer__japanese--shown"
+          language === "ja" && "footer__japanese--shown"
         }`}
       >
         (日本語版は参考用です。

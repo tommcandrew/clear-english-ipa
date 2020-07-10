@@ -22,15 +22,29 @@ const Header = ({ language }) => {
     }
   }, []);
 
-  // const handleSelectLanguage = (e) => {
-  //   changeLanguage(e.target.value);
-  // };
+  const handleSelectLanguage = (e) => {
+    const origin = window.location.origin;
+    let selectedLang;
+    if (e.target.value === "en") {
+      selectedLang = "";
+    } else {
+      selectedLang = `/${e.target.value}`;
+    }
+    let path;
+    if (language === "en") {
+      path = window.location.pathname;
+    } else {
+      path = window.location.pathname.slice(3);
+    }
+    const newPath = `${origin}${selectedLang}${path}`;
+    window.location.href = newPath;
+  };
 
   return (
     <div
       className={`header__wrapper ${
-        language === "chTra" && "header__wrapper--chinese"
-      } ${language === "chSim" && "header__wrapper--chinese"}`}
+        language === "tc" && "header__wrapper--chinese"
+      } ${language === "sc" && "header__wrapper--chinese"}`}
     >
       <div className="header__top"></div>
       <div className="header__middle">
@@ -38,16 +52,16 @@ const Header = ({ language }) => {
           <p>Kitty Lam</p>
           <img src={celtaLogo} alt="" />
         </div>
-        {/* <select
+        <select
           className="header__select"
           onChange={handleSelectLanguage}
           value={language}
         >
           <option value="en">English</option>
-          <option value="chSim">中文 (简体)</option>
-          <option value="chTra">中文 (繁体)</option>
-          <option value="jap">日本語</option>
-        </select> */}
+          <option value="sc">中文 (简体)</option>
+          <option value="tc">中文 (繁体)</option>
+          <option value="ja">日本語</option>
+        </select>
       </div>
       <div className="header__bottom">
         <ul className="header__nav">{generateNavLinks(language)}</ul>

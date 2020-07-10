@@ -73,16 +73,14 @@
 
 .index__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 2rem 0;
 }
 
 .index__item p {
   border-top: 2px solid $blueColor;
-  margin-top: -0.6rem;
-  padding-top: 0.8rem;
+  padding-top: 0.5rem;
   flex: 1;
-  margin-left: -5px;
   padding-left: 10px;
 }
 
@@ -97,8 +95,10 @@
 .index__number {
   font-size: 2.5rem;
   color: $blueColor;
-  margin-right: 0.5rem;
   font-family: eloquent;
+  margin-bottom: 2rem;
+  margin-top: -0.8rem;
+  padding-right: 0.1rem;
 }
 
 .index__bold-yellow {
@@ -121,6 +121,7 @@
   }
   .index__number {
     font-size: 3.5rem;
+    margin-top: -1rem;
   }
   .index__banner img {
     display: block;

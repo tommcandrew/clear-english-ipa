@@ -1,8 +1,8 @@
 const supportedLanguages = [
   { lang: "en", default: true },
-  { lang: "chSim", default: false },
-  { lang: "chTra", default: false },
-  { lang: "jap", default: false },
+  { lang: "sc", default: false },
+  { lang: "tc", default: false },
+  { lang: "ja", default: false },
 ];
 exports.onCreatePage = async ({
   page,

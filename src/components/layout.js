@@ -9,9 +9,9 @@ const Layout = ({ children, language }) => {
       <div
         className={`layout__content ${
           language === "en" && "layout__content--english"
-        } ${language === "chTra" && "layout__content--chinese"} ${
-          language === "chSim" && "layout__content--chinese"
-        } ${language === "jap" && "layout__content--japanese"}`}
+        } ${language === "tc" && "layout__content--chinese"} ${
+          language === "sc" && "layout__content--chinese"
+        } ${language === "ja" && "layout__content--japanese"}`}
       >
         {children}
       </div>
