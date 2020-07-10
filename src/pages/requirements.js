@@ -1,14 +1,13 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import multiLingualText from "../assets/multiLingualText";
-import LanguageContext from "../context/LanguageContext";
 
-const Requirements = () => {
-  const { language } = useContext(LanguageContext);
+const Requirements = (props) => {
+  const language = props.pageContext.lang;
 
   return (
-    <Layout>
+    <Layout language={language}>
       <Head title="requirements" />
       <div className="requirements__content">
         <h1 className="requirements__title">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { createClient } from "contentful-management";
 import Notification from "../components/notification";
@@ -8,6 +8,14 @@ const Admin = () => {
   const [authenticated, setAuthenticated] = useState(false);
   const [message, setMessage] = useState();
   const [authMessage, setAuthMessage] = useState(null);
+
+  useEffect(() => {
+    if (!window) {
+      return;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   const handleLogin = (e) => {
     e.preventDefault();

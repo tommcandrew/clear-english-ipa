@@ -1,15 +1,22 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import multiLingualText from "../assets/multiLingualText";
-import LanguageContext from "../context/LanguageContext";
 import students from "../assets/students.jpg";
 
-const Home = () => {
-  const { language } = useContext(LanguageContext);
+const Home = (props) => {
+  const language = props.pageContext.lang;
+
+  useEffect(() => {
+    if (!window) {
+      return;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   return (
-    <Layout>
+    <Layout language={language}>
       <Head title="home" />
       <div className="index__banner">
         <div className="index__banner-text">

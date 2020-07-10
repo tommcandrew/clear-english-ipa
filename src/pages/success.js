@@ -1,13 +1,20 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/layout";
-import LanguageContext from "../context/LanguageContext";
 import multiLingualText from "../assets/multiLingualText";
 
-const Success = () => {
-  const { language } = useContext(LanguageContext);
+const Success = (props) => {
+  const language = props.pageContext.lang;
+
+  useEffect(() => {
+    if (!window) {
+      return;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   return (
-    <Layout>
+    <Layout language={language}>
       <div className="success__content">
         <p align="center" variant="h5">
           {multiLingualText.successMessage[language]}

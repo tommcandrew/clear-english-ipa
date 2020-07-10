@@ -1,14 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Header from "./header.js";
 import Footer from "../components/footer";
-import LanguageContext from "../context/LanguageContext";
 
-const Layout = ({ children }) => {
-  const { language } = useContext(LanguageContext);
-
+const Layout = ({ children, language }) => {
   return (
     <>
-      <Header />
+      <Header language={language} />
       <div
         className={`layout__content ${
           language === "en" && "layout__content--english"
@@ -18,7 +15,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </div>
-      <Footer />
+      <Footer language={language} />
     </>
   );
 };

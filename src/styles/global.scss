@@ -23,6 +23,10 @@ body,
   flex-direction: column;
 }
 
+body {
+  overflow-anchor: none;
+}
+
 a {
   text-decoration: none;
 }

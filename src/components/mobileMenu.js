@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import generateNavLinks from "../utils/generateNavLinks";
-import LanguageContext from "../context/LanguageContext";
 
-const MobileMenu = ({ mobileMenuIsOpen }) => {
-  const { language } = useContext(LanguageContext);
-
+const MobileMenu = ({ mobileMenuIsOpen, language }) => {
   return (
     <ul
       className={`mobileMenu__wrapper ${

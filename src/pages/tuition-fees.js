@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import { useStaticQuery, graphql } from "gatsby";
 import multiLingualText from "../assets/multiLingualText";
-import LanguageContext from "../context/LanguageContext";
 
-const TuitionFees = () => {
-  const { language } = useContext(LanguageContext);
+const TuitionFees = (props) => {
+  const language = props.pageContext.lang;
+
+  useEffect(() => {
+    if (!window) {
+      return;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   const data = useStaticQuery(graphql`
     query {
@@ -28,7 +35,7 @@ const TuitionFees = () => {
   const tuitionFees = data.allContentfulTuitionFees.edges[0].node;
 
   return (
-    <Layout>
+    <Layout language={language}>
       <Head title="tuition fees" />
       <div className="tuitionFees__content">
         <h1 className="tuitionFees__title">

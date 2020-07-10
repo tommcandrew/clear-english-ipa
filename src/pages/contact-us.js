@@ -1,14 +1,21 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import multiLingualText from "../assets/multiLingualText";
-import LanguageContext from "../context/LanguageContext";
 
-const ContactUs = () => {
-  const { language } = useContext(LanguageContext);
+const ContactUs = (props) => {
+  const language = props.pageContext.lang;
+
+  useEffect(() => {
+    if (!window) {
+      return;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   return (
-    <Layout>
+    <Layout language={language}>
       <Head title="contact us" />
       <div className="contactUs__content">
         <h1 className="contactUs__title">

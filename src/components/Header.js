@@ -2,11 +2,9 @@ import React, { useState, useEffect, useContext } from "react";
 import celtaLogo from "../assets/logo_celta.png";
 import MobileMenu from "./mobileMenu";
 import generateNavLinks from "../utils/generateNavLinks";
-import LanguageContext from "../context/LanguageContext";
 
-const Header = () => {
+const Header = ({ language }) => {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
-  const { language, changeLanguage } = useContext(LanguageContext);
 
   const toggleMobileMenu = () => {
     setMobileMenuIsOpen(!mobileMenuIsOpen);
@@ -24,9 +22,9 @@ const Header = () => {
     }
   }, []);
 
-  const handleSelectLanguage = (e) => {
-    changeLanguage(e.target.value);
-  };
+  // const handleSelectLanguage = (e) => {
+  //   changeLanguage(e.target.value);
+  // };
 
   return (
     <div
@@ -40,7 +38,7 @@ const Header = () => {
           <p>Kitty Lam</p>
           <img src={celtaLogo} alt="" />
         </div>
-        <select
+        {/* <select
           className="header__select"
           onChange={handleSelectLanguage}
           value={language}
@@ -49,7 +47,7 @@ const Header = () => {
           <option value="chSim">中文 (简体)</option>
           <option value="chTra">中文 (繁体)</option>
           <option value="jap">日本語</option>
-        </select>
+        </select> */}
       </div>
       <div className="header__bottom">
         <ul className="header__nav">{generateNavLinks(language)}</ul>
@@ -59,7 +57,7 @@ const Header = () => {
           <div></div>
         </div>
       </div>
-      <MobileMenu mobileMenuIsOpen={mobileMenuIsOpen} />
+      <MobileMenu mobileMenuIsOpen={mobileMenuIsOpen} language={language} />
     </div>
   );
 };

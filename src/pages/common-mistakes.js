@@ -1,18 +1,25 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import multiLingualText from "../assets/multiLingualText";
-import LanguageContext from "../context/LanguageContext";
 import thinkingEmoji from "../assets/thinking.png";
 import shockedEmoji from "../assets/shocked.png";
 import oopsEmoji from "../assets/oops.png";
 import email from "../assets/Email.jpg";
 
-const CommonMistakes = () => {
-  const { language } = useContext(LanguageContext);
+const CommonMistakes = (props) => {
+  const language = props.pageContext.lang;
+
+  useEffect(() => {
+    if (!window) {
+      return;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   return (
-    <Layout>
+    <Layout language={language}>
       <Head title="common mistakes" />
       <div className="commonMistakes__content">
         <div className="commonMistakes__inner">

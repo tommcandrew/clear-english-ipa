@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import generateNavLinks from "../utils/generateNavLinks";
-import LanguageContext from "../context/LanguageContext";
 
-const Footer = () => {
-  const { language } = useContext(LanguageContext);
-
+const Footer = ({ language }) => {
   return (
     <div
       className={`footer__wrapper ${
