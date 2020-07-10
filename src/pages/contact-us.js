@@ -35,10 +35,26 @@ const ContactUs = (props) => {
               action="/success"
             >
               <input type="hidden" name="form-name" value="contact" />
-              <input type="text" name="name" placeholder="Your name" />
-              <input type="text" name="email" placeholder="Your email" />
-              <textarea name="message" rows="15" placeholder="Your message" />
-              <input type="submit" className="contact__send" value="SEND" />
+              <input
+                type="text"
+                name="name"
+                placeholder={multiLingualText.contactUsYourName[language]}
+              />
+              <input
+                type="text"
+                name="email"
+                placeholder={multiLingualText.contactUsYourEmail[language]}
+              />
+              <textarea
+                name="message"
+                rows="15"
+                placeholder={multiLingualText.contactUsYourMessage[language]}
+              />
+              <input
+                type="submit"
+                className="contact__send"
+                value={multiLingualText.contactUsSend[language]}
+              />
             </form>
           </div>
         </div>

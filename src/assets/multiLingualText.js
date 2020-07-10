@@ -558,12 +558,35 @@ const multiLingualText = {
     tc: "電話: ",
     ja: "Tel:",
   },
-
+  contactUsYourName: {
+    en: "Your name",
+    sc: "名称",
+    tc: "名稱 ",
+    ja: "名前",
+  },
+  contactUsYourEmail: {
+    en: "Your email",
+    sc: "电邮地址",
+    tc: "電郵地址",
+    ja: "電子メールアドレス",
+  },
+  contactUsYourMessage: {
+    en: "Your message",
+    sc: "留言讯息",
+    tc: "留言訊息",
+    ja: "メッセージ",
+  },
+  contactUsSend: {
+    en: "Send",
+    sc: "发送",
+    tc: "發送",
+    ja: "送る",
+  },
   successMessage: {
     en: "Thank you. Your message has been sent.",
-    sc: "Thank you. Your message has been sent.",
-    tc: "Thank you. Your message has been sent.",
-    ja: "Thank you. Your message has been sent.",
+    sc: "谢谢你! 你的讯息已经成功发送。",
+    tc: "謝謝你! 你的訊息已經成功發送。",
+    ja: "ありがとうございました。 メッセージを送信しました。",
   },
 };
 
