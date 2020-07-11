@@ -4,10 +4,11 @@ import { createClient } from "contentful-management";
 import Notification from "../components/notification";
 import Layout from "../components/Layout";
 
-const Admin = () => {
+const Admin = (props) => {
   const [authenticated, setAuthenticated] = useState(false);
   const [message, setMessage] = useState();
   const [authMessage, setAuthMessage] = useState(null);
+  const language = props.pageContext.lang;
 
   useEffect(() => {
     if (!window) {
@@ -105,7 +106,7 @@ const Admin = () => {
   const tuitionFees = data.allContentfulTuitionFees.edges[0].node;
 
   return (
-    <Layout>
+    <Layout language={language}>
       <div className="admin__content">
         {!authenticated && (
           <form className="admin__login" onSubmit={handleLogin}>

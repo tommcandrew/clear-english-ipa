@@ -97,7 +97,8 @@
   color: $blueColor;
   font-family: eloquent;
   margin-bottom: 2rem;
-  // margin-top: -0.8rem;
+  //looks fine in device toolbar but big gap on actual mobile
+  margin-top: -0.3rem;
   padding-right: 0.1rem;
 }
 
