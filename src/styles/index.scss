@@ -20,11 +20,6 @@
   min-height: 30vh;
 }
 
-//text is in p in order to prevent phrase from separating
-.index__banner p {
-  display: inline;
-}
-
 .index__banner-text {
   flex: 1;
   background-color: $greenColor;
@@ -110,6 +105,11 @@
 .index__bold-yellow {
   font-weight: 500;
   color: yellow;
+}
+
+//to stop phrase from separating (Japanese)
+.index__nobreak {
+  white-space: nowrap;
 }
 
 .index__light-green {

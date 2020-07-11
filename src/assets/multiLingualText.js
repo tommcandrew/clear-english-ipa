@@ -45,7 +45,7 @@ const multiLingualText = {
     en: `We emphasise <span class="index__big">practice<br /></span> in order to <span class="index__big">speak</span> and <span class="index__big">write</span> like a <span class="index__bold-yellow">native British speaker</span>.`,
     sc: `我们重视<span class="index__big">实习</span>, 活用英语, <span class="index__big">能写能讲</span>, <span class="index__bold-yellow">尤如英国人</span>!`,
     tc: `我們重視<span class="index__big">實習</span>，活用英語，<span class="index__big">能寫能講</span>，<span class="index__bold-yellow">尤如英國人</span>!`,
-    ja: `ネイティブな<span class="index__yellow">イギリス英語を使えるようになるための、アウトプットの</span><p><span class="index__yellow">練習を重要視した</span>レッスンを提供します！</p>`,
+    ja: `ネイティブな<span class="index__yellow">イギリス英語を使えるようになるための、アウトプットの</span><span class="index__yellow index__nobreak">練習を重要視した</span>レッスンを提供します！`,
   },
   indexTitle: {
     en:
