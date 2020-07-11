@@ -90,9 +90,9 @@ const multiLingualText = {
   },
   teachingMethodTitle: {
     en: "We adopt a <strong>two-stage</strong> approach:",
-    sc: `我们的教学设<strong>两阶段</strong>:`,
-    tc: `我們的教學設<strong>兩階段</strong>:`,
-    ja: `<strong>２段階</strong>に分けた教育メソッドを実施します:`,
+    sc: `我们的教学设<span class="bold-dark">两阶段</span>:`,
+    tc: `我們的教學設<span class="bold-dark">兩階段</span>:`,
+    ja: `<span class="bold-dark">２段階</span>に分けた教育メソッドを実施します:`,
   },
   teachingMethodFirstStage: {
     en: "First stage:",
@@ -194,7 +194,7 @@ const multiLingualText = {
     ],
     sc: [
       "此阶段的目标是<strong>减少你对老师的倚赖</strong>;",
-      "每课有独立话题给你<strong>实习口语；</strong>;",
+      "每课有独立话题给你<strong>实习口语</strong>;",
       "我们不单会<strong>準确指出你发音</strong>和<strong>文法问题</strong>，更会指导你如何<strong>纠正自己</strong>;",
       "你可选择课堂后<strong>实习写作</strong>，并电邮给我们，在下一堂上我们会指导你如何改正错误;",
       "你学会在<strong>社交场合</strong>(如朋友聚会、同事閒谈、与陌生人初次见面等等) ，如何<strong>自然交谈</strong>;",
@@ -327,10 +327,10 @@ const multiLingualText = {
     ja: "(1レッスン2時間):",
   },
   tuitionFees16Hours: {
-    en: "(16 hours):",
-    sc: "（16小时):",
-    tc: "（16小時):",
-    ja: "(16時間):",
+    en: "(16 hours)",
+    sc: "（16小时)",
+    tc: "（16小時)",
+    ja: "(16時間)",
   },
   tuitionFeesSecond8Lessons: {
     en: "Second 8 lessons",
