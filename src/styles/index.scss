@@ -20,6 +20,11 @@
   min-height: 30vh;
 }
 
+//text is in p in order to prevent phrase from separating
+.index__banner p {
+  display: inline;
+}
+
 .index__banner-text {
   flex: 1;
   background-color: $greenColor;
