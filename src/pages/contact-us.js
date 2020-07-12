@@ -14,6 +14,17 @@ const ContactUs = (props) => {
     }
   }, []);
 
+  let successUrl;
+  if (language === "en") {
+    successUrl = "/success";
+  } else if (language === "sc") {
+    successUrl = "/sc/success";
+  } else if (language === "tc") {
+    successUrl = "/tc/success";
+  } else if (language === "ja") {
+    successUrl = "/ja/success";
+  }
+
   return (
     <Layout language={language}>
       <Head title="contact us" />
@@ -32,7 +43,7 @@ const ContactUs = (props) => {
               name="contact"
               method="POST"
               data-netlify="true"
-              action={language === "en" ? `/success` : `/${language}/success`}
+              action={successUrl}
             >
               <input type="hidden" name="form-name" value="contact" />
               <input
