@@ -27,9 +27,11 @@ const AboutTheTeacher = (props) => {
             <img src={kitty} alt="the teacher - Kitty Lam" />
           </div>
           <div className="aboutTheTeacher__text">
-            {multiLingualText.aboutTheTeacherParas[language].map((para) => (
-              <p dangerouslySetInnerHTML={{ __html: para }}></p>
-            ))}
+            {multiLingualText.aboutTheTeacherParas[language].map(
+              (para, index) => (
+                <p dangerouslySetInnerHTML={{ __html: para }} key={index}></p>
+              )
+            )}
           </div>
         </div>
       </div>

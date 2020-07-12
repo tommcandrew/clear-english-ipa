@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
-
 @font-face {
   font-family: eloquent;
   src: url("../assets/EloquentJFCaptionPro.ttf");
@@ -28,8 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-family: "Roboto-Light", sans-serif;
+  // font-weight: 200;
   padding-bottom: 1rem;
 }
 
@@ -137,13 +135,22 @@
     display: block;
   }
   .index__banner-text {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     padding: 0;
   }
   .index__big {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .layout__content--chinese .index__item p {
     font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .index__big {
+    font-size: 3.5rem;
+  }
+  .index__banner-text {
+    font-size: 2.1rem;
   }
 }
