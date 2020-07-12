@@ -40,12 +40,16 @@ const ContactUs = (props) => {
           <div className="contactUs__form-wrapper">
             <form
               className="contactUs__form"
-              name="contact"
+              name={`contact--${language}`}
               method="POST"
               data-netlify="true"
               action={successUrl}
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input
+                type="hidden"
+                name="form-name"
+                value={`contact--${language}`}
+              />
               <input
                 type="text"
                 name="name"
