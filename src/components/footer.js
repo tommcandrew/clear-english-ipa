@@ -6,7 +6,9 @@ const Footer = ({ language }) => {
     <div
       className={`footer__wrapper ${
         language === "tc" && "footer__wrapper--chinese"
-      } ${language === "sc" && "footer__wrapper--chinese"}`}
+      } ${language === "sc" && "footer__wrapper--chinese"} ${
+        language === "ja" && "footer__wrapper--japanese"
+      }`}
     >
       <ul className="footer__nav">{generateNavLinks(language)}</ul>
       <div className="footer__contact">
@@ -16,14 +18,6 @@ const Footer = ({ language }) => {
       <a href="/admin" className="footer__admin">
         Admin
       </a>
-      <div
-        className={`footer__japanese ${
-          language === "ja" && "footer__japanese--shown"
-        }`}
-      >
-        (日本語版は参考用です。
-        正確な契約条件については、英語版を参照してください。)
-      </div>
     </div>
   );
 };

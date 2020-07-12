@@ -17,6 +17,10 @@
   font-family: jhenghei;
 }
 
+.footer__wrapper--japanese .footer__nav {
+  margin-bottom: 5rem;
+}
+
 .footer__nav {
   display: flex;
   flex-direction: column;
@@ -24,6 +28,23 @@
   flex-grow: 1;
   padding: 1rem 0;
   align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.footer__nav::after {
+  position: absolute;
+  content: "(日本語版は参考用です。正確な契約条件については、英語版を参照してください。)";
+  font-weight: bold;
+  display: none;
+  color: #333;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__wrapper--japanese .footer__nav::after {
+  display: block;
 }
 
 .footer__nav li {
@@ -55,19 +76,6 @@
   margin: 1rem 0;
 }
 
-.footer__japanese {
-  font-weight: bold;
-  display: none;
-  text-align: center;
-  width: 100%;
-  color: #333;
-  margin: 1rem 0;
-}
-
-.footer__japanese--shown {
-  display: block;
-}
-
 @media (min-width: 1400px) {
   .footer__wrapper {
     justify-content: space-around;
@@ -80,5 +88,8 @@
   }
   .footer__contact {
     width: 30%;
+  }
+  .footer__wrapper--japanese .footer__nav {
+    margin-bottom: 0;
   }
 }

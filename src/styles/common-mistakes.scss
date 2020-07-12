@@ -86,10 +86,11 @@
 
 .commonMistakes__email a {
   text-decoration: underline;
+  color: $blueColorLighter;
 }
 
 .commonMistakes__email a:visited {
-  color: $blueColor;
+  color: $blueColorLighter;
 }
 
 .commonMistakes__times {

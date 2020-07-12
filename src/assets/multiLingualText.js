@@ -45,7 +45,7 @@ const multiLingualText = {
     en: `We emphasise <span class="index__big">practice<br /></span> in order to <span class="index__big">speak</span> and <span class="index__big">write</span> like a <span class="index__bold-yellow">native British speaker</span>.`,
     sc: `我们重视<span class="index__big">实习</span>, 活用英语, <span class="index__big">能写能讲</span>, <span class="index__bold-yellow">尤如英国人</span>!`,
     tc: `我們重視<span class="index__big">實習</span>，活用英語，<span class="index__big">能寫能講</span>，<span class="index__bold-yellow">尤如英國人</span>!`,
-    ja: `ネイティブな<span class="index__yellow">イギリス英語を使えるようになるための、アウトプットの</span><span class="index__yellow index__nobreak">練習を重要視した</span>レッスンを提供します！`,
+    ja: `<span class="index__nobreak">ネイティブな<span class="index__yellow">イギリス英語を</span></span><span class="index__nobreak index__yellow">使えるようになるための、</span><span class="index__yellow index__nobreak">アウトプットの練習を重要</span><span class="index__nobreak"><span class="index__yellow">視した</span>レッスンを提供します！</span>`,
   },
   indexTitle: {
     en:
@@ -180,7 +180,7 @@ const multiLingualText = {
     sc: "<strong>实践</strong>改进弱点，<strong>并学懂怎样</strong>纠正自己",
     tc: "<strong>實習</strong>改進弱點，<strong>並學懂怎樣</strong>糾正自己",
     ja:
-      "苦手な発音を克服、自分で間違いを修正<strong>するテクニックを身につける</strong>",
+      "<span class='green'>苦手な発音を克服、自分で間違いを修正</span><strong>するテクニックを身につける</strong>",
   },
   teachingMethodListSecond: {
     en: [
@@ -292,8 +292,8 @@ const multiLingualText = {
   tuitionFeesPara: {
     en:
       "(a maximum of 4 students for online lessons and 5 for face-to-face lessons)",
-    sc: "(网教最多4人－班，面授最多5人－班)",
-    tc: "(網教最多4人－班，面授最多5人－班) ",
+    sc: "(网教最多4人一班，面授最多5人一班)",
+    tc: "(網教最多4人一班，面授最多5人一班) ",
     ja: "（オンラインは最大4人、教室では最大5人のグループレッスン）",
   },
   tuitionFeesTrialLesson: {
@@ -342,7 +342,7 @@ const multiLingualText = {
     en: "Stage Two",
     sc: `<span class="dark">第二阶段</span>`,
     tc: `<span class="dark">第二階段</span>`,
-    ja: "第二ステップ",
+    ja: `<span class="dark">第二ステップ</span>`,
   },
   tuitionFees1to1: {
     en: "1-to-1 lessons:",
@@ -536,8 +536,9 @@ const multiLingualText = {
       "私は、<strong>ケンブリッジ大学のCELTA正式認定英語講師</strong>です。一般的にアクセントが強い香港で生まれ育ったのにどうやってアジア特有のアクセントを直したのか不思議に思う方もいるかもしれません。",
       "数年前のある日、私は自分の英語が強い香港なまりであり、英語でうまく自分を表現できていないことに気づきました。ネイティブのように話したいと思いましたが、良い先生を探すのは困難でした。香港内でも<strong>60人のネイティブ講師</strong>に習いましたが私が強い香港なまりを取りたいと伝えても、<strong>ほとんどの講師が「大人になってから発音を改善するのは無理だよ。」と言いました</strong>。がっくり来ましたが、それらの先生たちの言うことを無視して自分でその方法を編み出しました。",
       "ネイティブ講師たちは、我々アジア人の発音ミスを指摘をし、彼らの口の動きを観察して真似するように指導します。しかし唇の動きは見えても、舌の動きや口の筋肉の使い方までは見えないので、なまりを取ることが難しいのです。",
-      `母国語が違えば、英語とは筋肉の使い方が異なります。ネイティブ講師達はアジア人の口の動かし方を理解していないので、何が原因で発音が悪いのかまでは理解できていません。そこで、何年も自分で考え、研究した結果、私は発音ミスを修正するコツを見つけました。もしあなたも同じ経験があるようであれば、是非私のレッスンを受けて下さい。<strong><a href="/ja/contact-us">Email</a>でご相談いただければ、オンラインで面接できる日時を調整します。あなたの英語のどこを改善したいかご自由に相談いただければ、何かお手伝いができるかと思います</strong>。`,
+      `母国語が違えば、英語とは筋肉の使い方が異なります。ネイティブ講師達はアジア人の口の動かし方を理解していないので、何が原因で発音が悪いのかまでは理解できていません。そこで、<strong>何年も自分で考え、研究した結果、私は発音ミスを修正するコツを見つけました</strong>。もしあなたも同じ経験があるようであれば、是非私のレッスンを受けて下さい。<strong><a href="/ja/contact-us">Email</a>でご相談いただければ、オンラインで面接できる日時を調整します。あなたの英語のどこを改善したいかご自由に相談いただければ、何かお手伝いができるかと思います</strong>。`,
       "<strong>アクセントやイギリス英語の発音だけでなく、文法やライティングを指導することもできます。自分を表現したり、伝えたいことを正確に伝える英語になるために力になれると思います</strong>。遠慮なくメールでご相談ください。",
+      "Kitty Lam, CELTA",
     ],
   },
   contactUsTitle: {

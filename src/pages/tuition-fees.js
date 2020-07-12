@@ -100,7 +100,9 @@ const TuitionFees = (props) => {
             {/* have separate chinese and english per person string */}
             <p>
               {language === "sc" && "每人"}
-              {language === "tc" && "每人"}HK$
+              {language === "tc" && "每人"}
+              {language === "ja" && "一人当たり"}
+              HK$
               {tuitionFees.stage21To1LessonsPrice}
               {language === "en" && "/per person"}{" "}
               {multiLingualText.tuitionFeesPriceInfo[language]}
@@ -110,7 +112,9 @@ const TuitionFees = (props) => {
             <strong>{multiLingualText.tuitionFees2to1[language]}</strong>{" "}
             <p>
               {language === "sc" && "每人"}
-              {language === "tc" && "每人"}HK$
+              {language === "tc" && "每人"}
+              {language === "ja" && "一人当たり"}
+              HK$
               {tuitionFees.stage22To1LessonsPrice}
               {language === "en" && "/per person"}{" "}
               {multiLingualText.tuitionFeesPriceInfo[language]}

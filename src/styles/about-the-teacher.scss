@@ -26,9 +26,8 @@
 }
 
 .aboutTheTeacher__kitty {
-  width: 200px;
   text-align: center;
-  flex-grow: 1;
+  max-width: 200px;
 }
 
 .aboutTheTeacher__kitty img {
@@ -39,7 +38,8 @@
   font-size: 1.1rem;
   padding: 0 1.5rem;
   margin: 1rem 0;
-  flex-basis: 80%;
+  flex-basis: 65%;
+  line-height: 2;
 }
 
 .layout__content--chinese .aboutTheTeacher__text {
@@ -60,6 +60,7 @@
 
 .aboutTheTeacher__content a {
   text-decoration: underline;
+  color: $blueColor;
 }
 
 .aboutTheTeacher__content a:visited {

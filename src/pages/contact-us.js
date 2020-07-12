@@ -32,7 +32,7 @@ const ContactUs = (props) => {
               name="contact"
               method="POST"
               data-netlify="true"
-              action="/success"
+              action={language === "en" ? `/success` : `/${language}/success`}
             >
               <input type="hidden" name="form-name" value="contact" />
               <input
