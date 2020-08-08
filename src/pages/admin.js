@@ -8,6 +8,7 @@ const Admin = (props) => {
   const [authenticated, setAuthenticated] = useState(false);
   const [message, setMessage] = useState();
   const [authMessage, setAuthMessage] = useState(null);
+  const [currentComponent, setCurrentComponent] = useState(null);
   const language = props.pageContext.lang;
 
   useEffect(() => {
@@ -30,6 +31,7 @@ const Admin = (props) => {
 
   const logout = () => {
     setAuthenticated(false);
+    setCurrentComponent(null);
   };
 
   const connectToContentful = async () => {
@@ -44,7 +46,7 @@ const Admin = (props) => {
     }
   };
 
-  const handleUpdate = async (e) => {
+  const handleUpdateFees = async (e) => {
     e.preventDefault();
     const stage1First8Price = Number(e.target.stage1First8Price.value);
     const stage1Second8Price = Number(e.target.stage1Second8Price.value);
@@ -87,7 +89,7 @@ const Admin = (props) => {
   };
 
   const data = useStaticQuery(graphql`
-    query {
+    query myQuery {
       allContentfulTuitionFees {
         edges {
           node {
@@ -100,10 +102,23 @@ const Admin = (props) => {
           }
         }
       }
+      allContentfulBlogPost {
+        edges {
+          node {
+            title
+            date
+            childContentfulBlogPostBodyRichTextNode {
+              json
+            }
+          }
+        }
+      }
     }
   `);
 
   const tuitionFees = data.allContentfulTuitionFees.edges[0].node;
+
+  const blogPosts = data.allContentfulBlogPost.edges;
 
   return (
     <Layout language={language}>
@@ -118,8 +133,29 @@ const Admin = (props) => {
             <div className="admin__auth-message">{authMessage}</div>
           </form>
         )}
-        {authenticated && (
-          <form className="admin__update" onSubmit={handleUpdate}>
+        {authenticated && !currentComponent && (
+          <div>
+            <button onClick={() => setCurrentComponent("updateFees")}>
+              Update Fees
+            </button>
+            <button onClick={() => setCurrentComponent("addPost")}>
+              Add blog post
+            </button>
+          </div>
+        )}
+        {/* {authenticated && currentComponent === "addPost" && (
+          <div>
+            <h1>Blog posts</h1>
+            {blogPosts.map((post, index) => (
+              <div key={index}>
+                <h1>{post.title}</h1>
+                <h2>{post.date}</h2>
+              </div>
+            ))}
+          </div>
+        )} */}
+        {authenticated && currentComponent === "updateFees" && (
+          <form className="admin__update" onSubmit={handleUpdateFees}>
             <div className="admin__field">
               <label htmlFor="stage1First8Price">
                 Stage 1 - First 8 Lessons Price:

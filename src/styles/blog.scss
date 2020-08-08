@@ -1,0 +1,25 @@
+.blog__content {
+  align-self: flex-end;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.blog__title {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: $blueColorLighter;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+@media (min-width: 700px) {
+  .blog__content {
+    margin: 3rem 0;
+  }
+  .blog__title {
+    font-size: 2rem;
+    text-align: left;
+  }
+}

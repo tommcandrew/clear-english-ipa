@@ -1,0 +1,27 @@
+.postPreview__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 0;
+  border-bottom: 1px solid #888;
+  padding-bottom: 2rem;
+}
+
+.postPreview__date {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.postPreview__title a {
+  color: $blueColorLighter;
+}
+
+.postPreview__title {
+  margin-bottom: 1rem;
+}
+
+.postPreview__preview {
+  font-size: 1.2rem;
+}

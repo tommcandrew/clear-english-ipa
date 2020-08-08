@@ -9,6 +9,7 @@ const multiLingualText = {
       "Common Mistakes",
       "About the teacher",
       "Contact us",
+      "Blog",
     ],
     sc: [
       "主页",
@@ -19,6 +20,7 @@ const multiLingualText = {
       "常见错误",
       "老师",
       "联络我们",
+      "Blog",
     ],
     tc: [
       "主頁",
@@ -29,6 +31,7 @@ const multiLingualText = {
       "常見錯誤",
       "老師",
       "聯絡我們",
+      "Blog",
     ],
     ja: [
       "ホーム",
@@ -39,6 +42,7 @@ const multiLingualText = {
       "よくある間違い",
       "講師紹介",
       "連絡先",
+      "Blog",
     ],
   },
   indexBanner: {

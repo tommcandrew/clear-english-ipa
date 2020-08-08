@@ -15,5 +15,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
+
+    "@contentful/rich-text-react-renderer",
   ],
 };
