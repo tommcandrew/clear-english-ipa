@@ -15,9 +15,6 @@ const Footer = ({ language }) => {
         <div className="footer__email">Email: farbeyondlimit@gmail.com</div>
         <div className="footer__phone">Tel: (852) 9170 7930</div>
       </div>
-      <a href="/admin" className="footer__admin">
-        Admin
-      </a>
     </div>
   );
 };

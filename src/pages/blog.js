@@ -17,7 +17,7 @@ const Blog = (props) => {
 
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost {
+      allContentfulBlogPost(sort: { fields: date, order: DESC }) {
         edges {
           node {
             date(formatString: "MMMM DD, YYYY")

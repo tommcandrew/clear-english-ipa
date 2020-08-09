@@ -47,6 +47,8 @@ export const pageQuery = graphql`
 `;
 
 const postTemplate = ({ data, pageContext }) => {
+  console.log("DATA");
+  console.log(data);
   const { contentfulBlogPost: post } = data;
   const language = pageContext.lang;
 

@@ -61,7 +61,6 @@ exports.createPages = async ({ graphql, actions }) => {
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
     const next = index === 0 ? null : posts[index - 1].node;
-
     supportedLanguages.map((langObj) => {
       const localizedPath = langObj.default
         ? `/blog/${post.node.path}`
