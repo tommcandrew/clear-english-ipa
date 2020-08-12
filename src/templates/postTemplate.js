@@ -5,6 +5,8 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import Layout from "../components/Layout";
 
 const options = {
+  renderText: (text) =>
+    text.split("\\n").flatMap((text, i) => [i > 0 && <br />, text]),
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const alt = node.data.target.fields.title["en-US"];
