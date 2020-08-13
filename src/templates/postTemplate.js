@@ -5,8 +5,25 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import Layout from "../components/Layout";
 
 const options = {
+  //blank lines
   renderText: (text) =>
     text.split("\\n").flatMap((text, i) => [i > 0 && <br />, text]),
+  //color text
+  renderText: (text) => {
+    const split = text.split(/<|>/);
+    const res = split.map((chunk) => {
+      if (chunk.match(/=/)) {
+        const endOfFirstTag = chunk.indexOf("=");
+        const startOfLastTag = chunk.lastIndexOf("=");
+        const word = chunk.substring(endOfFirstTag + 1, startOfLastTag);
+        const color = chunk.substring(0, endOfFirstTag);
+        return <span style={{ color }}>{word}</span>;
+      } else {
+        return chunk;
+      }
+    });
+    return res;
+  },
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const alt = node.data.target.fields.title["en-US"];
@@ -49,8 +66,6 @@ export const pageQuery = graphql`
 `;
 
 const postTemplate = ({ data, pageContext }) => {
-  console.log("DATA");
-  console.log(data);
   const { contentfulBlogPost: post } = data;
   const language = pageContext.lang;
 
