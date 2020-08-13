@@ -5,6 +5,7 @@
   margin: 3rem 0;
   border-bottom: 1px solid #888;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .postPreview__date {
@@ -12,6 +13,10 @@
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-style: italic;
+}
+
+.postPreview__title {
+  font-size: 1.6rem;
 }
 
 .postPreview__title a {
@@ -24,4 +29,13 @@
 
 .postPreview__preview {
   font-size: 1.2rem;
+}
+
+@media (min-width: 700px) {
+  .postPreview__title {
+    font-size: 2rem;
+  }
+  .postPreview__wrapper {
+    width: 60%;
+  }
 }
