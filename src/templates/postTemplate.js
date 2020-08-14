@@ -12,8 +12,8 @@ const options = {
       const split = text.split(/<|>/);
       const res = split.map((chunk) => {
         if (chunk.match(/==/)) {
-          const endOfFirstTag = chunk.indexOf("=");
-          const startOfLastTag = chunk.lastIndexOf("=");
+          const endOfFirstTag = chunk.indexOf("=") + 1;
+          const startOfLastTag = chunk.lastIndexOf("=") - 1;
           const word = chunk.substring(endOfFirstTag + 1, startOfLastTag);
           const color = chunk.substring(0, endOfFirstTag);
           return <span style={{ color }}>{word}</span>;
