@@ -10,13 +10,17 @@ const options = {
       return <br />;
     } else {
       const split = text.split(/<|>/);
-      const res = split.map((chunk) => {
+      const res = split.map((chunk, index) => {
         if (chunk.match(/==/)) {
           const endOfFirstTag = chunk.indexOf("=") + 1;
           const startOfLastTag = chunk.lastIndexOf("=") - 1;
           const word = chunk.substring(endOfFirstTag + 1, startOfLastTag);
-          const color = chunk.substring(0, endOfFirstTag);
-          return <span style={{ color }}>{word}</span>;
+          const color = chunk.substring(0, endOfFirstTag - 1);
+          return (
+            <span key={index} style={{ color }}>
+              {word}
+            </span>
+          );
         } else {
           return chunk;
         }
