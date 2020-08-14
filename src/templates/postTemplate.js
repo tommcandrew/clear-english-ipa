@@ -11,7 +11,7 @@ const options = {
     } else {
       const split = text.split(/<|>/);
       const res = split.map((chunk) => {
-        if (chunk.match(/=/)) {
+        if (chunk.match(/==/)) {
           const endOfFirstTag = chunk.indexOf("=");
           const startOfLastTag = chunk.lastIndexOf("=");
           const word = chunk.substring(endOfFirstTag + 1, startOfLastTag);
