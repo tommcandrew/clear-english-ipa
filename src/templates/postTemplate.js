@@ -96,6 +96,8 @@ const postTemplate = ({ data, pageContext }) => {
             post.files.map((file, index) => (
               <a
                 href={file.file.url}
+                target="_blank"
+                rel="noopener"
                 download
                 key={`file-${index}`}
                 className="post__file"
