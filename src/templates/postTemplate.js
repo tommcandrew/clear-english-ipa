@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 
 const options = {
   renderText: (text) => {
-    if (text === "\\n") {
+    if (text.includes("\\n")) {
       return <br />;
     } else {
       const split = text.split(/<|>/);
@@ -30,13 +30,15 @@ const options = {
   },
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
-      const alt = node.data.target.fields.title["en-US"];
-      const url = node.data.target.fields.file["en-US"].url;
-      return (
-        <div className="post__media">
-          <img src={url} alt={alt} />
-        </div>
-      );
+      if (node.data.target.fields) {
+        const alt = node.data.target.fields.title["en-US"];
+        const url = node.data.target.fields.file["en-US"].url;
+        return (
+          <div className="post__media">
+            <img src={url} alt={alt} />
+          </div>
+        );
+      }
     },
     [INLINES.HYPERLINK]: (node) => {
       if (node.data.uri.indexOf("youtube") !== -1) {
@@ -65,6 +67,12 @@ export const pageQuery = graphql`
       body {
         json
       }
+      files {
+        file {
+          url
+          fileName
+        }
+      }
     }
   }
 `;
@@ -82,6 +90,19 @@ const postTemplate = ({ data, pageContext }) => {
         </div>
         <div className="post__body">
           {documentToReactComponents(post.body.json, options)}
+        </div>
+        <div className="post__files">
+          {post.files &&
+            post.files.map((file, index) => (
+              <a
+                href={file.file.url}
+                download
+                key={`file-${index}`}
+                className="post__file"
+              >
+                {file.file.fileName}
+              </a>
+            ))}
         </div>
       </div>
     </Layout>

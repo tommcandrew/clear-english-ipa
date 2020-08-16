@@ -50,6 +50,23 @@
   line-height: 2;
 }
 
+.post__files {
+  margin: 1rem auto;
+  width: 60%;
+  width: 100%;
+  padding-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__file {
+  border: 1px solid #333;
+  padding: 0.5rem 0.7rem;
+  border-radius: 20px;
+}
+
 .post__info {
   width: 60%;
   margin: 0 auto;

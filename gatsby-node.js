@@ -40,10 +40,6 @@ exports.createPages = async ({ graphql, actions }) => {
           edges {
             node {
               title
-              date
-              childContentfulBlogPostBodyRichTextNode {
-                json
-              }
               path
             }
           }
