@@ -81,6 +81,8 @@ const postTemplate = ({ data, pageContext }) => {
   const { contentfulBlogPost: post } = data;
   const language = pageContext.lang;
 
+  console.log(data);
+
   return (
     <Layout language={language}>
       <div className="post__content">
