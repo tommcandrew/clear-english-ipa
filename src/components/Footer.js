@@ -12,7 +12,7 @@ const Footer = ({ language }) => {
     >
       <ul className="footer__nav">{generateNavLinks(language)}</ul>
       <div className="footer__contact">
-        <div className="footer__email">Email: farbeyondlimit@gmail.com</div>
+        <div className="footer__email">Email: clearenglishipa@gmail.com</div>
         <div className="footer__phone">Tel: (852) 9170 7930</div>
       </div>
     </div>
