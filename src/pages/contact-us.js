@@ -34,7 +34,8 @@ const ContactUs = (props) => {
         </h1>
         <div className="contactUs__inner">
           <h2>
-            {multiLingualText.contactUsEmail[language]} farbeyondlimit@gmail.com
+            {multiLingualText.contactUsEmail[language]}{" "}
+            clearenglishipa@gmail.com
           </h2>
           <h2>{multiLingualText.contactUsTel[language]} (852) 9170 7930</h2>
           <div className="contactUs__form-wrapper">
