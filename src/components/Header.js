@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import celtaLogo from "../assets/logo_celta.png";
 import MobileMenu from "./mobileMenu";
 import generateNavLinks from "../utils/generateNavLinks";

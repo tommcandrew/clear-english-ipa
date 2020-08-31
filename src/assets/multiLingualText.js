@@ -255,7 +255,6 @@ const multiLingualText = {
     ja: [
       "<strong>10歳以上の方</strong>ならどなたでも申し込めます。",
       "<strong>指導は全て英語</strong>ですので、初中級以上の基礎がある方が望ましいです。",
-      ,
       "<strong>オンラインレッスンでは以下のものを使用します</strong>:",
     ],
   },

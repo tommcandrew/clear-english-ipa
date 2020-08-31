@@ -45,6 +45,7 @@ const options = {
         return (
           <div className="post__media">
             <iframe
+              title="media"
               width="560"
               height="315"
               src={node.data.uri}
@@ -81,8 +82,6 @@ const postTemplate = ({ data, pageContext }) => {
   const { contentfulBlogPost: post } = data;
   const language = pageContext.lang;
 
-  console.log(data);
-
   return (
     <Layout language={language}>
       <div className="post__content">
@@ -100,6 +99,7 @@ const postTemplate = ({ data, pageContext }) => {
                 href={file.file.url}
                 target="_blank"
                 rel="noopener"
+                rel="noreferrer"
                 download
                 key={`file-${index}`}
                 className="post__file"
