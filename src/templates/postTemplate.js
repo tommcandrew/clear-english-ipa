@@ -92,9 +92,10 @@ const postTemplate = ({ data, pageContext }) => {
         <div className="post__body">
           {documentToReactComponents(post.body.json, options)}
         </div>
-        <div className="post__files">
-          {post.files &&
-            post.files.map((file, index) => (
+        {post.files && (
+          <div className="post__files">
+            <p>Downloadable file(s):</p>
+            {post.files.map((file, index) => (
               <a
                 href={file.file.url}
                 target="_blank"
@@ -107,7 +108,8 @@ const postTemplate = ({ data, pageContext }) => {
                 {file.file.fileName}
               </a>
             ))}
-        </div>
+          </div>
+        )}
       </div>
     </Layout>
   );
