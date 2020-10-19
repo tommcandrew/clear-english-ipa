@@ -17,6 +17,20 @@
   font-weight: 300;
 }
 
+.aboutTheTeacher__link {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  padding-left: 20px;
+  img {
+    width: 20px;
+    margin-left: 0.3rem;
+  }
+}
+
 .aboutTheTeacher__inner {
   width: 100%;
   display: flex;
@@ -26,12 +40,15 @@
 }
 
 .aboutTheTeacher__kitty {
-  text-align: center;
   max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.aboutTheTeacher__kitty img {
+.aboutTheTeacher__profile {
   width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .aboutTheTeacher__text {
