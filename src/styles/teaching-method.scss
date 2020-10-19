@@ -6,6 +6,15 @@
   margin: 3rem 0;
 }
 
+.teachingMethod__video {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  video {
+    width: 100%;
+  }
+}
+
 .teachingMethod__title {
   color: $blueColorLighter;
   font-size: 1.7rem;
@@ -209,10 +218,16 @@
   .layout__content--chinese .teachingMethod__list {
     font-size: 1.3rem;
   }
+  .teachingMethod__video {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1000px) {
   .teachingMethod__ribbon {
     width: 25%;
+  }
+  .teachingMethod__video {
+    width: 30%;
   }
 }

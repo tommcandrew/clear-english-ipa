@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/head.js";
 import multiLingualText from "../assets/multiLingualText";
+import methodVideo from "../assets/method.mp4";
 
 const TeachingMethod = (props) => {
   const language = props.pageContext.lang;
@@ -18,6 +19,9 @@ const TeachingMethod = (props) => {
     <Layout language={language}>
       <Head title="teaching method" />
       <div className="teachingMethod__content">
+        <div className="teachingMethod__video">
+          <video controls src={methodVideo} type="video/mp4" />
+        </div>
         <h1
           className="teachingMethod__title"
           dangerouslySetInnerHTML={{
