@@ -41,10 +41,7 @@ const options = {
       }
     },
     [INLINES.HYPERLINK]: (node) => {
-      if (
-        node.data.uri.indexOf("youtube") !== -1 ||
-        node.data.uri.indexOf("weibo") !== -1
-      ) {
+      if (node.data.uri.indexOf("youtube") !== -1) {
         return (
           <div className="post__media">
             <iframe
