@@ -56,8 +56,7 @@
 
 .post__files {
   margin: 1rem auto;
-  width: 60%;
-  width: 100%;
+  width: 80%;
   padding-top: 2rem;
   text-align: center;
   display: flex;
@@ -76,8 +75,14 @@
 }
 
 .post__info {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.post__hyperlink {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
 }
 
 @media (min-width: 700px) {
@@ -85,10 +90,19 @@
     width: 80%;
     margin: 3rem auto;
   }
+  .post__info {
+    width: 60%;
+  }
+  .post__files {
+    width: 60%;
+  }
   .post__title {
     font-size: 2rem;
   }
   .post__body {
     width: 60%;
+  }
+  .post__hyperlink {
+    padding-top: 0;
   }
 }

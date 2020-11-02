@@ -55,6 +55,14 @@ const options = {
             ></iframe>
           </div>
         );
+      } else {
+        return (
+          <div className="post__hyperlink">
+            <a href={node.data.uri} target="_blank" rel="noreferrer nooopener">
+              {node.content[0].value}
+            </a>
+          </div>
+        );
       }
     },
   },
