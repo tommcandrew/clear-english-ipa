@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import Layout from "../components/Layout";
+import videoIcon from "../assets/video.png"
 
 const options = {
   renderText: (text) => {
@@ -61,6 +62,7 @@ const options = {
             <a href={node.data.uri} target="_blank" rel="noreferrer nooopener">
               {node.content[0].value}
             </a>
+            <img src={videoIcon} />
           </div>
         );
       }

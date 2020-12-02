@@ -83,6 +83,12 @@
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  font-size: 1.3rem;
+  align-items: center;
+  img {
+    padding-left: 0.3rem;
+    width: 30px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -104,5 +110,7 @@
   }
   .post__hyperlink {
     padding-top: 0;
+    font-size: 1.5rem;
+
   }
 }
